@@ -1,0 +1,6 @@
+Flask==3.0.2
+Flask_Cors==4.0.0
+ipython==8.12.0
+llama_index==0.9.47
+python-dotenv==1.0.1
+rdflib==7.0.0
