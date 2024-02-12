@@ -64,7 +64,7 @@ class GraphDBStore(GraphStore):
                     def add_triple(sub, pred, obj, processed_subject, processed_predicate, processed_object):
                         triples.append({'readable': {'subject': sub, 'predicate': pred, 'object': obj}, 'processed': {'subject': processed_subject, 'predicate': processed_predicate, 'object': processed_object}})
 
-                    obj, proc_obj = self.generate_triples_from_json("a" + key + " entity", value, triples)
+                    obj, proc_obj = self.generate_triples_from_json("a " + key + " entity", value, triples)
                     predVal1 = "has " + key
                     pred1 = self.predicate_uri + quote_plus(predVal1)
                     add_triple(subject, predVal1, obj, processed_subject, pred1, proc_obj)
@@ -277,7 +277,7 @@ class GraphDBStore(GraphStore):
         if self.random_uri in uri:
             res = unquote_plus(uri.replace(self.random_uri, ""))
             random_id = res.split()[-1]
-            return res.replace(random_id, "(ID for discerning, don't show it to user: " + random_id + ")")
+            return res.replace(random_id, "")
         if self.value_uri in uri:
             return unquote_plus(uri.replace(self.value_uri, ""))
         if self.predicate_uri in uri:

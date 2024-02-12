@@ -1,15 +1,12 @@
-import React, { useRef } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import { TextField } from "@mui/material";
-import { TextareaAutosize } from "@mui/base";
 import Stack from "@mui/material/Stack";
 import { Button } from "@mui/material";
 import { Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 import TriplesTable, { Triple } from "./TriplesTable";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { table } from "console";
 
 enum OperationType {
   Query = "Query",
@@ -18,14 +15,17 @@ enum OperationType {
 
 function App() {
   const [input, setInput] = React.useState("");
+  const [queryInput, setQueryInput] = React.useState("");
+  const [tableTriples, setTableTriples] = React.useState<Triple[]>([]);
   const [queryOutput, setQueryOutput] = React.useState<string>("");
   const [operationType, setOperationType] = React.useState<OperationType>(
     OperationType.Query,
   );
+  const [gettingTriplesFromMultipleFiles, setGettingTriplesFromMultipleFiles] =
+    React.useState(false);
   const serverAddress =
     process.env.REACT_APP_SERVER_ADDRESS || "http://127.0.0.1:5000";
 
-  const tableRef = useRef();
   const getTriplesFromJson = useMutation({
     mutationFn: (json_string: string) => {
       return axios.post(serverAddress + "/get-triples-from-json", {
@@ -33,17 +33,17 @@ function App() {
       });
     },
     onSuccess: (response) => {
-      if (tableRef.current) {
-        //@ts-ignore
-        tableRef.current.addTriples(response.data.triples);
-      }
+      setTableTriples((prevTriples) => [
+        ...prevTriples,
+        ...response.data.triples,
+      ]);
     },
   });
 
   const runQuery = useMutation({
     mutationFn: () => {
       return axios.post(serverAddress + "/query", {
-        query: input,
+        query: queryInput,
       });
     },
     onSuccess: (response) => {
@@ -51,10 +51,26 @@ function App() {
     },
   });
 
+  const commitTriples = useMutation({
+    mutationFn: (triples: Triple[]) => {
+      return axios.post(serverAddress + "/commit-triples", {
+        triples,
+      });
+    },
+    onSuccess: (response) => {
+      console.log("commited", response);
+    },
+  });
+
+  const isLoadingTable =
+    commitTriples.isPending ||
+    getTriplesFromJson.isPending ||
+    gettingTriplesFromMultipleFiles;
+
   const inputComponents = {
     [OperationType.Query]: (
       <TextField
-        value={input}
+        value={queryInput}
         id="input"
         label="Query Input"
         placeholder="Type query"
@@ -73,7 +89,7 @@ function App() {
           },
         }}
         maxRows={1}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e) => setQueryInput(e.target.value)}
       />
     ),
 
@@ -82,7 +98,7 @@ function App() {
         value={input}
         id="input"
         label="JSON Input"
-        placeholder="Input JSON object (if the object has an 'id' key it is best if it is uniquely identified by it, e. g. there isn't something completely unrelated with the same 'id' value)"
+        placeholder="Input JSON object (it's good, but not necessary, that object values in json have an id field with a unique value)"
         multiline
         variant="outlined"
         sx={{
@@ -109,7 +125,7 @@ function App() {
         value={queryOutput}
         disabled
         id="outlined-textarea"
-        label="Answer"
+        label={runQuery.isPending ? "Loading Answer..." : "Answer"}
         multiline
         variant="outlined"
         sx={{
@@ -126,7 +142,7 @@ function App() {
           },
           flexGrow: 1,
           "& .MuiInputBase-input.Mui-disabled": {
-            WebkitTextFillColor: "#000000",
+            WebkitTextFillColor: runQuery.isPending ? "disabled" : "#000000",
           },
           "& textarea": {
             alignSelf: "flex-start",
@@ -135,7 +151,13 @@ function App() {
       />
     ),
     [OperationType.AddJSONTriples]: (
-      <TriplesTable ref={tableRef} serverAddress={serverAddress} />
+      <TriplesTable
+        serverAddress={serverAddress}
+        commitTriplesFunction={commitTriples.mutate}
+        isLoading={isLoadingTable}
+        triples={tableTriples}
+        setTriples={setTableTriples}
+      />
     ),
   };
 
@@ -195,7 +217,8 @@ function App() {
             onChange={async (e) => {
               if (e.target.files && e.target.files[0]) {
                 let res = await e.target.files[0].text();
-                setInput(res);
+                if (operationType == OperationType.Query) setQueryInput(res);
+                else setInput(res);
               }
             }}
           />
@@ -228,11 +251,13 @@ function App() {
                 type="file"
                 multiple={true}
                 onChange={async (e) => {
-                  if (e.target.files && e.target.files[0]) {
+                  if (e.target.files) {
+                    setGettingTriplesFromMultipleFiles(true);
                     for (let file of Array.from(e.target.files)) {
                       let res = await file.text();
                       getTriplesFromJson.mutate(res);
                     }
+                    setGettingTriplesFromMultipleFiles(false);
                   }
                 }}
               />

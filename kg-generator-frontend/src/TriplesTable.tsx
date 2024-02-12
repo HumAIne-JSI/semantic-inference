@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useMemo } from "react";
+import { useMemo } from "react";
 import {
   MaterialReactTable,
   useMaterialReactTable,
@@ -11,8 +11,6 @@ import {
 import { Box, Button, IconButton, Tooltip, Typography } from "@mui/material";
 import React from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
 
 export type BasicTriple = {
   subject: string;
@@ -27,17 +25,13 @@ export type Triple = {
 
 interface TriplesTableProps {
   serverAddress: string;
+  isLoading: boolean;
+  commitTriplesFunction: (triples: Triple[]) => void;
+  triples: Triple[];
+  setTriples: React.Dispatch<React.SetStateAction<Triple[]>>;
 }
 
-const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
-  const [triples, setTriples] = React.useState<Triple[]>([]);
-
-  useImperativeHandle(ref, () => ({
-    addTriples(toAdd: Triple[]) {
-      setTriples((prevTriples) => [...prevTriples, ...toAdd]);
-    },
-  }));
-
+const TriplesTable = (props: TriplesTableProps) => {
   const columns = useMemo<MRT_ColumnDef<Triple>[]>(
     () => [
       {
@@ -56,20 +50,9 @@ const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
     [],
   );
 
-  const commitTriples = useMutation({
-    mutationFn: (triples: Triple[]) => {
-      return axios.post(props.serverAddress + "/commit-triples", {
-        triples,
-      });
-    },
-    onSuccess: (response) => {
-      console.log("commited");
-    },
-  });
-
   const table = useMaterialReactTable({
     columns,
-    data: triples, //data must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
+    data: props.triples, //data must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
     enableStickyHeader: true,
     enableStickyFooter: true,
     initialState: {
@@ -79,6 +62,9 @@ const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
         left: ["mrt-row-expand", "mrt-row-select"],
         right: ["mrt-row-actions"],
       },
+    },
+    state: {
+      isLoading: props.isLoading,
     },
     muiTablePaperProps: {
       sx: {
@@ -99,18 +85,18 @@ const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
         .flatRows.map((row) => row.index);
 
       const handleCommit = () => {
-        commitTriples.mutate(
+        props.commitTriplesFunction(
           table.getSelectedRowModel().flatRows.map((row) => row.original),
         );
         console.log("commit ", table.getSelectedRowModel().flatRows);
-        handleDelete();
+        // handleDelete();
       };
 
       const handleDelete = () => {
         console.log("delete ");
         table.resetRowSelection();
-        setTriples(
-          triples.filter((_, index) => {
+        props.setTriples((prevTriples) =>
+          prevTriples.filter((_, index) => {
             return selectedIndices.indexOf(index) == -1;
           }),
         );
@@ -134,7 +120,7 @@ const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
             <MRT_ToggleDensePaddingButton table={table} />
             {selectedIndices.length > 0 ? (
               <Typography variant="body1">
-                Selected {selectedIndices.length} out of {triples.length}{" "}
+                Selected {selectedIndices.length} out of {props.triples.length}{" "}
                 triples
               </Typography>
             ) : null}
@@ -180,6 +166,6 @@ const TriplesTable = forwardRef((props: TriplesTableProps, ref) => {
       <MaterialReactTable table={table} />
     </Box>
   );
-});
+};
 
 export default TriplesTable;
