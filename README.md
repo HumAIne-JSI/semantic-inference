@@ -24,13 +24,19 @@ Simply run an instance (you can for example use a desktop app downloaded from ht
 
 ### Server
 
-in [kg-generator-server](./kg-generator-server/) run
+in [kg-generator-server](./kg-generator-server/) run:
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-to take care of Python dependencies. To run the server run
+to take care of Python dependencies. To enable queries using GPT-3.5 Turbo paste your OpenAI key to an .env file located in the server directory, it's content should look like:
+
+```
+OPENAI_API_KEY=sk-...F63V
+```
+
+To run the server run
 
 ```bash
 python3 ./app.py --host 127.0.0.1 --port 5000 --debug 0 --graphDBhost 127.0.0.1 --graphDBport 7200 --graphDBrepository Knowledge-Graph --graphDBgraph http://knowledge-graph.com
@@ -77,3 +83,20 @@ or
 npm run build
 npx serve -s build
 ```
+
+## Features
+
+### Llama_index for making queries on the KG
+
+LlamaIndex (https://www.llamaindex.ai/) is a data framework for connecting different data sources to large language models. It can be used for RAG (retrieval-augmented generation) applications (such as this one).
+
+Benefits of RAG (getting information from data sources and adding it to LLM question context) over traditional LLM fine-tuning are
+
+- RAG is cheaper,
+- because of the cost of LLM training RAGs are easier to update with latest information,
+- and source of LLM answers is more easily identified.
+
+RAG pipeline
+![1707828394202](https://docs.llamaindex.ai/en/stable/_images/basic_rag.png)
+
+Llama_index can be used to index raw data by generating vector embeddings and storing them in a specialized database called a "vector store". It also supports generating and querying knowledge graphs, in our case we generated triplets from JSON and stored them in GraphDB without LLM help, but we used Llama_index to read from GraphDB and use the information to answer queries.
