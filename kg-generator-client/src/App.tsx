@@ -258,7 +258,6 @@ function App() {
                   if (e.target.files) {
                     setGettingTriplesFromMultipleFiles(true);
                     for (let file of Array.from(e.target.files)) {
-                      console.log(file.name);
                       let res = await file.text();
                       getTriplesFromJson.mutate(res);
                     }
