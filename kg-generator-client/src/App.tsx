@@ -7,6 +7,7 @@ import { Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 import TriplesTable, { Triple } from "./TriplesTable";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
+import ts from "typescript";
 
 enum OperationType {
   Query = "Query",
@@ -24,7 +25,10 @@ function App() {
   const [gettingTriplesFromMultipleFiles, setGettingTriplesFromMultipleFiles] =
     React.useState(false);
   const serverAddress =
-    process.env.REACT_APP_SERVER_ADDRESS || "http://127.0.0.1:5000";
+    "http://" +
+    (process.env.REACT_APP_SERVER_HOST || "127.0.0.1") +
+    ":" +
+    (process.env.REACT_APP_SERVER_PORT || "5000");
 
   const getTriplesFromJson = useMutation({
     mutationFn: (json_string: string) => {
@@ -254,6 +258,7 @@ function App() {
                   if (e.target.files) {
                     setGettingTriplesFromMultipleFiles(true);
                     for (let file of Array.from(e.target.files)) {
+                      console.log(file.name);
                       let res = await file.text();
                       getTriplesFromJson.mutate(res);
                     }
@@ -279,6 +284,7 @@ function App() {
               fullWidth
               component="span"
               onClick={() => {
+                runQuery.reset();
                 runQuery.mutate();
               }}
             >

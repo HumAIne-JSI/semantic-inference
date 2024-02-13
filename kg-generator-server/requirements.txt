@@ -1,0 +1,9 @@
+Flask==3.0.2
+Flask_Cors==4.0.0
+llama_index==0.10.1
+python-dotenv==1.0.1
+rdflib==7.0.0
+Requests==2.31.0
+SPARQLWrapper==2.0.0
+SPARQLWrapper==2.0.0
+waitress==3.0.0

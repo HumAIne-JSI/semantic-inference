@@ -1,6 +1,6 @@
 import random
 from typing import *
-from llama_index.graph_stores.types import GraphStore
+from llama_index.core.graph_stores.types import GraphStore
 from typing import Any, Dict, List, Optional, Protocol, TypedDict, runtime_checkable
 from rdflib import Graph, URIRef, Literal, ConjunctiveGraph
 from urllib.parse import quote_plus, unquote_plus

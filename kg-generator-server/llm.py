@@ -1,11 +1,11 @@
 
 from dotenv import load_dotenv
 
-from llama_index.llms import OpenAI
-from llama_index.storage.storage_context import StorageContext
-from llama_index import (
+from llama_index.llms.openai import OpenAI
+from llama_index.core import (
     ServiceContext,
     KnowledgeGraphIndex,
+    StorageContext
 )
 
 def get_query_engine(graph_store):
