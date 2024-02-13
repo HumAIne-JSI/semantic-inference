@@ -10,11 +10,7 @@ Client-Server application for constructing Knowledge Graphs through user input (
    - [GraphDB Setup](#GraphDB)
    - [Server Setup](#Server)
    - [Client Setup](#Client)
-2. [Requirements](#requirements)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+2. [Llama_index](#Llama_index)
 
 ## Setup
 
