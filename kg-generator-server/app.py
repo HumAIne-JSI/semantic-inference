@@ -54,6 +54,20 @@ def commit_triples():
         print(e)
         return jsonify({'error': str(e)}), 400
     
+
+import re
+
+def remove_words_with_substring(input_string, substring):
+    # Remove words containing the specified substring
+    words = input_string.split()
+    filtered_words = [word for word in words if substring not in word]
+    filtered_string = ' '.join(filtered_words)
+
+    # Remove double spaces
+    cleaned_string = re.sub(' +', ' ', filtered_string)
+
+    return cleaned_string
+
 @app.route('/query', methods=['POST'])
 def query():
     try:

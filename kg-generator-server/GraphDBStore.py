@@ -6,6 +6,8 @@ from rdflib import Graph, URIRef, Literal, ConjunctiveGraph
 from urllib.parse import quote_plus, unquote_plus
 import re
 import queue
+from datetime import datetime, timedelta
+import SPARQLWrapper
 
 
 class BasicTriple(TypedDict):
@@ -45,6 +47,9 @@ class GraphDBStore(GraphStore):
         self.graph_write.open(f'{sparql_endpoint}/statements')
         self.graph_read = ConjunctiveGraph()
         self.sparql_endpoint = sparql_endpoint
+        self.all_query_time = 0
+        self.sparql = SPARQLWrapper.SPARQLWrapper(self.sparql_endpoint)
+        self.random_id = "c5nLE3vR"
         
     def generate_triples_from_json(self, subject, json_data, triples):
         if isinstance(json_data, dict):
@@ -52,7 +57,7 @@ class GraphDBStore(GraphStore):
                 subject = json_data['id']
             elif 'idShort' in json_data.keys():
                 subject = json_data['idShort']
-            rand_num_str = random.randint(0, 10000000000).__str__()
+            rand_num_str = self.random_id + random.randint(0, 10000000000).__str__()
             subject = subject + " " + rand_num_str
             processed_subject = self.random_uri + quote_plus(subject)
             for key, val in json_data.items():
@@ -92,25 +97,42 @@ class GraphDBStore(GraphStore):
 
     def get(self, subj: str, limit = 1e18) -> List[List[str]]:
         uri = URIRef(subj)
+        # print("TU", subj)
+        # query = f"""
+        #     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        #     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        #     SELECT ?a ?o
+        #     WHERE {{
+        #         SERVICE <{self.sparql_endpoint}> {{
+        #             GRAPH ?g {{
+        #                 <{uri}> ?a ?o .
+        #             }}
+        #         }}
+        #         VALUES ?g {{<{self.graph_name}>}}
+        #         FILTER(?a != rdfs:label && ?a != rdf:type) .
+        #     }}
+        #     LIMIT {limit}
+        # """
+
         query = f"""
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             SELECT ?a ?o
             WHERE {{
-                SERVICE <{self.sparql_endpoint}> {{
-                    GRAPH ?g {{
-                        <{uri}> ?a ?o .
-                    }}
+                GRAPH <{self.graph_name}> {{
+                    <{uri}> ?a ?o .
                 }}
-                VALUES ?g {{<{self.graph_name}>}}
                 FILTER(?a != rdfs:label && ?a != rdf:type) .
             }}
             LIMIT {limit}
         """
+        
 
-        # print("GETTING FOR ", subj, list(map(lambda tup : [self.remove_pref(tup[0]), self.remove_pref(tup[1])], list(res))))
-        # print(query)
-        return list(map(lambda tup : [tup[0], tup[1]], list(self.graph_read.query(query))))
+        self.sparql.method = 'POST'
+        self.sparql.setQuery(query)
+        self.sparql.setReturnFormat('json')
+        res = self.sparql.query().convert()['results']['bindings']
+        return list(map(lambda tup : [tup['a']['value'], tup['o']['value']], res))
     
     def _get_all_subjs(self) -> List[str]:
         query = f"""
@@ -132,52 +154,78 @@ class GraphDBStore(GraphStore):
     def _get_rel_map(
         self, subj: str, depth: int = 2, limit: int = 100
     ) -> List[List[str]]:
-        print("in", subj)
-        depth_of = {}
+        start_time = datetime.now()
+        print("in321123", subj, start_time)
         q = queue.Queue()
         q.put((subj, None, None, 0))
         rel_map = []
+        vis = set()
         while not q.empty():
             obj, subj, pred, cdepth = q.get()
             if cdepth > depth:
                 break
-            if depth_of.get(obj) is not None:
-                continue
-            depth_of[obj] = cdepth
             if cdepth > 0:
                 rel_map.append([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
-            for pred, next_obj in self.get(obj, limit):
-                    q.put((next_obj, obj, pred, cdepth + 1))
+            if obj not in vis and limit > 0:
+                for pred, next_obj in self.get(obj, limit):
+                        if next_obj == subj:
+                            continue
+                        q.put((next_obj, obj, pred, cdepth + 1))
+                        limit -= 1
+                        # print(limit)
+                        if limit == 0:
+                            break
+            vis.add(obj)
         return rel_map
 
-    def search_for_term(self, term, limit = 20):
+
+    def search_for_term(self, term, limit = 3):
+        print("searchin")
         term = ''.join([' ' if char in "()[]-+&!\'\"\*\?{}[]~\\" else char for char in term]).strip()
         term = re.sub(r'\s+', ' ', term)
-        term = ' '.join(word + '~2' for word in term.split())
         query = f"""
             PREFIX luc: <http://www.ontotext.com/connectors/lucene#>
             PREFIX luc-index: <http://www.ontotext.com/connectors/lucene/instance#>
             SELECT ?entity {{
                 SERVICE <{self.sparql_endpoint}> {{
                     ?search a luc-index:search ;
-                        luc:query 'search: {term}' ;
+                        luc:query 'search: {' '.join(word + '~2' for word in term.split())}' ;
                         luc:limit "{limit}" ;
                         luc:entities ?entity .
                     ?entity luc:score ?score
-                    filter(?score >= 0.6)
+                    filter(?score >= 0.4)
                 }}
             }}
         """ 
-        print(term, list(map(lambda tup : tup[0], list(self.graph_read.query(query)))))
-        print(query)
-        return list(map(lambda tup : tup[0], list(self.graph_read.query(query))))      
+        
+        res1 = list(map(lambda tup : tup[0], list(self.graph_read.query(query))))
+
+        query2 = f"""
+            PREFIX :<http://www.ontotext.com/graphdb/similarity/>
+            PREFIX inst:<http://www.ontotext.com/graphdb/similarity/instance/>
+            PREFIX pubo: <http://ontology.ontotext.com/publishing#>
+
+            SELECT ?documentID ?score {{
+                ?search a inst:search-text ;
+                        :searchTerm "{term}" ;
+                        :searchParameters "-numsearchresults {limit}";
+                        :documentResult ?result .
+                ?result :value ?documentID ;
+                        :score ?score .
+            }}
+        """
+        self.sparql.method = 'GET'
+        self.sparql.setQuery(query2)
+        self.sparql.setReturnFormat('json')
+        res2 = list(map(lambda tup : tup['documentID']['value'], self.sparql.query().convert()['results']['bindings']))
+        return res2 + res1
 
 
     def get_rel_map(
         self, subjs: Optional[List[str]] = None, depth: int = 6, limit: int = 100
     ) -> Dict[str, List[List[str]]]:
         """Get depth-aware rel map."""
-        #print("HERE", subjs)
+        print("HERE", subjs)
         if subjs is None:
             subjs = self._get_all_subjs()
         new_subjs = []
@@ -277,7 +325,7 @@ class GraphDBStore(GraphStore):
         if self.random_uri in uri:
             res = unquote_plus(uri.replace(self.random_uri, ""))
             random_id = res.split()[-1]
-            return res.replace(random_id, "")
+            return res
         if self.value_uri in uri:
             return unquote_plus(uri.replace(self.value_uri, ""))
         if self.predicate_uri in uri:
