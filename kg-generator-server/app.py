@@ -8,7 +8,7 @@ import sys
 from waitress import serve
 
 from GraphDBStore import GraphDBStore
-from llm import get_query_engine
+from llm import get_query_engine, get_chat_engine
 
 
 
@@ -34,7 +34,8 @@ def get_triples_from_json():
         # print(input_string)
         json_object = json.loads(input_string)
         triples = []
-        graph_store.generate_triples_from_json("JSON root", json_object, triples)
+        # graph_store.generate_triples_from_json("JSON root", json_object, triples)
+        graph_store.generate_triples_from_AAS_json(json_object, triples)
         return jsonify({'triples': triples})
 
     except Exception as e:
@@ -73,7 +74,7 @@ def query():
     try:
         input_string = request.json.get('query')
         print("input:", input_string)
-        answer = query_engine.query(input_string)
+        answer = chat_engine.chat(input_string)
         print(answer.response, type(answer.response))
         return jsonify({'answer': answer.response})
 
@@ -152,6 +153,8 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
         print("Connector already exists")
     global query_engine
     query_engine = get_query_engine(graph_store)
+    global chat_engine
+    chat_engine = get_chat_engine(query_engine)
 
 
 
