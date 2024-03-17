@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 import SPARQLWrapper
 import aas_core3.jsonization as aas_jsonization
 import aas_core3.types as aas_types
+import math
 
 
 class BasicTriple(TypedDict):
@@ -52,6 +53,9 @@ class GraphDBStore(GraphStore):
         self.all_query_time = 0
         self.sparql = SPARQLWrapper.SPARQLWrapper(self.sparql_endpoint)
         self.random_id = "c5nLE3vR"
+        self.quantity = 100
+        self.width = 3
+        self.score_weight = 0
         
     def generate_triples_from_json(self, subject, json_data, triples):
         if isinstance(json_data, dict):
@@ -90,11 +94,14 @@ class GraphDBStore(GraphStore):
         )
         print("TU")
 
-        def get_uri(text):
+    
+        def get_uri(text, is_literal=False):
+            if is_literal:
+                return URIRef(self.value_uri + text)
             return URIRef(self.random_uri + text)
 
-        def add_triple(a, b, c):
-            triple = map(lambda e : get_uri(quote_plus(str(e))), (a, b, c))
+        def add_triple(a, b, c, last_is_literal=False):
+            triple = map(lambda e : get_uri(quote_plus(str(e)), True if last_is_literal and e == c else False), (a, b, c))
             a2, b2, c2 = triple
             triples.append({'readable': {'subject': a, 'predicate': b, 'object': c}, 'processed': {'subject': a2, 'predicate': b2, 'object': c2}})
         for e in environment.descend():
@@ -104,13 +111,13 @@ class GraphDBStore(GraphStore):
                     add_triple(e.id, "is instance of", e.derived_from.keys[0].value)
                 for submodel in e.submodels:
                     add_triple(submodel.keys[0].value, f'is part of / describes', e.id)
-                add_triple(e.id, "has description", e.description[0].text)
-                add_triple(e.id, "has name", e.id_short)
+                add_triple(e.id, "has description", e.description[0].text, True)
+                add_triple(e.id, "has name", e.id_short, True)
             elif (type(e) == aas_types.Submodel):
-                add_triple(e.id, "has name", e.id_short)
-                add_triple(e.id, "has description", e.description[0].text)
+                add_triple(e.id, "has name", e.id_short, True)
+                add_triple(e.id, "has description", e.description[0].text, True)
                 for submodel_element in e.submodel_elements:
-                    add_triple(e.id, f'has "{submodel_element.id_short}" value', submodel_element.value)
+                    add_triple(e.id, f'has "{submodel_element.id_short}" value', submodel_element.value, True)
 
     def _delete_all(self):
         self.graph_write.remove((None, None, None))
@@ -217,106 +224,136 @@ class GraphDBStore(GraphStore):
                 }}
                 VALUES ?g {{<{self.graph_name}>}}
                 FILTER(?a != rdfs:label && ?a != rdf:type) .
-            }}
+            }}r'], ['ykrUKaDzl2', 'is part of / describes', 'RobTefdT54']], '8ThMlVw1Fo': [['8ThMlVw1Fo', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['8ThMlVw1Fo', 'has description', 'Manufacturer of the asset'], ['8ThMlVw1Fo', 'has name', 'Manufacturer'], ['8ThMlVw1Fo', 'is part of / describes', 'PpxiMUowBX']], 'wSu3w9Cf0p': [['wSu3w9Cf0p', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['wSu3w9Cf0p', 'has description', 'Manufacturer of the asset'], ['wSu3w9Cf0p', 'has name', 'Manufacturer'], ['wSu3w9Cf0p', 'is part of / describes', 'anTYJk2Txy']], 'hTWL32OBPS': [['hTWL32OBPS', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['hTWL32OBPS', 'has description', 'Manufacturer of the asset'], ['hTWL32OBPS', 'has name', 'Manufacturer'], ['hTWL32OBPS', 'is part of / describes', '6LbmY1kOXv']], '3qL4Ma0fc1': [['3qL4Ma0fc1', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['3qL4Ma0fc1', 'has description', 'Manufacturer of the asset'], ['3qL4Ma0fc1', 'has name', 'Manufacturer'], ['3qL4Ma0fc1', 'is part of / describes', 'EAWOfqrkar']], 'qW5LIV3xWi': [['qW5LIV3xWi', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['qW5LIV3xWi', 'has description', 'Manufacturer of the asset'], ['qW5LIV3xWi', 'has name', 'Manufacturer'], ['qW5LIV3xWi', 'is part of / describes', 'mUqBWg57ho']], 'WrDvpiHAIN': [['WrDvpiHAIN', 'has "Manufacturer Name" value', 'QuantumTech Industries'], ['WrDvpiHAIN', 'has description', 'Manufacturer of the asset'], ['WrDvpiHAIN', 'has name', 'Manufacturer'], ['WrDvpiHAIN', 'is part of / describes', '7puiJHpoHy']], 'PXmz83Yluq': [['PXmz83Yluq', 'has "Required Current in amperes" value', '2']], 'dk8bGGQa9k': [['dk
         """
         return list(map(lambda tup : tup[0], list(self.graph_read.query(query))))
         
     def _get_rel_map(
-        self, subj: str, rel_map, depth: int = 6, limit: int = 100
+        self, subj: str, rel_map, depth: int = 6, limit: int = 50
     ) -> List[List[str]]:
         start_time = datetime.now()
         print("in321123", subj, start_time, depth, limit)
         q = queue.Queue()
         q.put((None, None, None, 0, None, subj))
         vis = set()
+        used = 0
         while not q.empty():
             subj, pred, obj, cdepth, prev, current = q.get()
+            print(subj, pred, obj, cdepth, prev, current)
             if cdepth > depth:
                 break
             if cdepth > 0:
                 if self.unURIfy(subj) not in rel_map:
                     rel_map[self.unURIfy(subj)] = []
-                rel_map[self.unURIfy(subj)].append([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
+                triple = [self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)]
+                if triple not in rel_map[self.unURIfy(subj)]:
+                    rel_map[self.unURIfy(subj)].append([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
+                    used += 1
+                    if used >= limit:
+                        break
             if current not in vis and limit > 0:
                 for pred, next_obj in self.get(current, limit):
                         if next_obj == prev:
                             continue
                         q.put((current, pred, next_obj, cdepth + 1, current, next_obj))
-                        limit -= 1
-                        # print(limit)
-                        if limit == 0:
-                            break
-                for prev_subj, pred in self._get_prev(current, limit):
-                        if prev_subj == prev:
-                            continue
-                        q.put((prev_subj, pred, current, cdepth + 1, current, prev_subj))
-                        limit -= 1
-                        # print(limit)
-                        if limit == 0:
-                            break
+            
+                if cdepth == 0 or not current.startswith(self.value_uri):
+                    for prev_subj, pred in self._get_prev(current, limit):
+                            if prev_subj == prev:
+                                continue
+                            q.put((prev_subj, pred, current, cdepth + 1, current, prev_subj))
             vis.add(obj)
-        print("TULE")
+        
+        return limit
 
 
     def search_for_term(self, term, limit = 3):
         print("searchin", term)
         term = ''.join([' ' if char in "()[]-+&!\'\"\*\?{}[]~\\" else char for char in term]).strip()
         term = re.sub(r'\s+', ' ', term)
-        query = f"""
-            PREFIX luc: <http://www.ontotext.com/connectors/lucene#>
-            PREFIX luc-index: <http://www.ontotext.com/connectors/lucene/instance#>
-            SELECT ?entity {{
-                SERVICE <{self.sparql_endpoint}> {{
-                    ?search a luc-index:search ;
-                        luc:query 'search: {' '.join(word + '~2' for word in term.split())}' ;
-                        luc:limit "{limit * 3 // 2}" ;
-                        luc:entities ?entity .
-                    ?entity luc:score ?score
-                    filter(?score >= 0.4)
-                }}
-            }}
-        """ 
-        
-        res1 = list(map(lambda tup : tup[0], list(self.graph_read.query(query))))
-        print(res1)
-        query2 = f"""
-            PREFIX :<http://www.ontotext.com/graphdb/similarity/>
-            PREFIX inst:<http://www.ontotext.com/graphdb/similarity/instance/>
-            PREFIX pubo: <http://ontology.ontotext.com/publishing#>
 
-            SELECT ?documentID ?score {{
-                ?search a inst:search-text ;
-                        :searchTerm "{term}" ;
-                        :searchParameters "-numsearchresults {limit}";
-                        :documentResult ?result .
-                ?result :value ?documentID ;
-                        :score ?score .
+        query = f"""
+            PREFIX retr: <http://www.ontotext.com/connectors/retrieval#>
+            PREFIX retr-index: <http://www.ontotext.com/connectors/retrieval/instance#>
+
+            SELECT * {{
+                [] a retr-index:gpt-search ;
+                retr:query "{term}" ;
+                retr:limit {self.width};
+                retr:entities ?entity .
+                ?entity retr:score ?score
             }}
         """
+        print(query)
         self.sparql.method = 'GET'
-        self.sparql.setQuery(query2)
+        self.sparql.setQuery(query)
         self.sparql.setReturnFormat('json')
-        res2 = list(map(lambda tup : tup['documentID']['value'], self.sparql.query().convert()['results']['bindings']))
+        print(self.sparql.query().convert())
+        print("tu")
+        res2 = list(map(lambda tup : (tup['entity']['value'], tup['score']['value']), self.sparql.query().convert()['results']['bindings']))
         print(res2)
-        return res2 + res1
+        return res2
 
 
     def get_rel_map(
-        self, subjs: Optional[List[str]] = None, depth: int = 6, limit: int = 100
+        self, subjs: Optional[List[str]] = None, depth: int = 6, limit: int = 2000
     ) -> Dict[str, List[List[str]]]:
         """Get depth-aware rel map."""
         print("HERE", subjs)
+
         if subjs is None:
             subjs = self._get_all_subjs()
         new_subjs = []
         for subj in subjs:
             new_subjs += self.search_for_term(subj)
+        new_subjs = list(set(new_subjs))
+        subj_to_score = {}
+        for subj, score in new_subjs:
+            if subj not in subj_to_score:
+                subj_to_score[subj] = float(score)
+            else:
+                subj_to_score[subj] = max(subj_to_score[subj], float(score))
+        print(new_subjs)
+        new_subjs = list(set(map(lambda t : t[0], new_subjs)))
+        new_subjs = sorted(new_subjs, key=lambda subj:subj_to_score[subj], reverse=True)
+        print(new_subjs)
         subjs = new_subjs
         # subjs = self.search_for_term(", ".join(subjs), 1)
         rel_map = {}
-        print("here", subjs)
-        for subj in set(subjs):
-            self._get_rel_map(subj, rel_map, depth=6, limit=100)
+        limit = self.quantity
+        left = limit
+        subjs = subjs[:self.width]
+        print("AAAABCD", self.width)
+        while left > 0 and len(subjs) > 0:
+            taken = 0
+            to_del = {}
+            to_take = []
+            for i in range(len(subjs)):
+                to_take.append(math.exp(subj_to_score[subjs[i]] * self.score_weight))
+                print(i, to_take[i], subj_to_score[subjs[i]], subjs[i])
+            sum_weights = sum(to_take)
+            for i in range(len(subjs)):
+                to_take[i] = int(left * to_take[i] / sum_weights)
+
+            sum_weights = sum(to_take)
+            to_take[0] += left - sum_weights
+
+            for i, subj in enumerate(dict.fromkeys(subjs)):
+                if to_take[i] == 0:
+                    continue
+                used = self._get_rel_map(subj, rel_map, depth=6, limit=to_take[i])
+                if used < to_take[i]:
+                    to_del[subj] = True
+                    taken += used
+            if taken == 0:
+                break
+            left -= taken
+            subjs = list(filter(lambda s : s not in to_del, subjs))
+                
+        for key in rel_map:
+            # print("lol", key)
+            rel_map[key] = list(map(lambda t : [t[0], t[1], t[2]], list(set(map(lambda l : (l[0], l[1], l[2]), rel_map[key])))))
+            # print(rel_map[key])
             
         # return self._data.get_rel_map(subjs=subjs, depth=depth, limit=limit)
                     # TBD, truncate the rel_map in a spread way, now just truncate based
@@ -367,12 +404,9 @@ class GraphDBStore(GraphStore):
     def _upsert_triples(self, triples: List[Triple]) -> None:
         graph = Graph()
         for triple in triples:
-            print(triple)
             for key in triple['readable']:
-                print(key)
                 self.add_auxilary_triples(triple['readable'][key], triple['processed'][key], graph)
             proc_triple = triple['processed']
-            print(proc_triple)
             graph.add((URIRef(proc_triple['subject']), URIRef(proc_triple['predicate']), URIRef(proc_triple['object'])))
         self.graph_write += graph
 

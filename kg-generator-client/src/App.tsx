@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import { TextField } from "@mui/material";
+import { Paper, TextField } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { Button } from "@mui/material";
 import { Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 import TriplesTable, { Triple } from "./TriplesTable";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
+import { Unstable_NumberInput as NumberInput } from "@mui/base/Unstable_NumberInput";
 import ts from "typescript";
+import { Height } from "@mui/icons-material";
 
 enum OperationType {
   Query = "Query",
@@ -17,6 +19,9 @@ enum OperationType {
 function App() {
   const [input, setInput] = React.useState("");
   const [queryInput, setQueryInput] = React.useState("");
+  const [breadth, setBreadth] = React.useState<number>(1);
+  const [scope, setScope] = React.useState<number>(100);
+  const [scoreWeight, setScoreWeight] = React.useState<number>(0);
   const [tableTriples, setTableTriples] = React.useState<Triple[]>([]);
   const [queryOutput, setQueryOutput] = React.useState<string>("");
   const [operationType, setOperationType] = React.useState<OperationType>(
@@ -48,6 +53,9 @@ function App() {
     mutationFn: () => {
       return axios.post(serverAddress + "/query", {
         query: queryInput,
+        breadth: breadth,
+        scope: scope,
+        score_weight: scoreWeight,
       });
     },
     onSuccess: (response) => {
@@ -277,18 +285,63 @@ function App() {
               </label>
             </React.Fragment>
           ) : (
-            <Button
-              variant="contained"
-              color="primary"
-              fullWidth
-              component="span"
-              onClick={() => {
-                runQuery.reset();
-                runQuery.mutate();
-              }}
-            >
-              Run Query
-            </Button>
+            <React.Fragment>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                component="span"
+                onClick={() => {
+                  runQuery.reset();
+                  runQuery.mutate();
+                }}
+                onKeyDown={() => {}}
+              >
+                Run Query
+              </Button>
+              <Stack
+                style={{
+                  flexDirection: "row",
+                }}
+              >
+                <Stack>
+                  <Stack width={100}>
+                    Breadth
+                    <TextField
+                      inputProps={{ type: "number" }}
+                      value={breadth}
+                      onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>,
+                      ) => {
+                        setBreadth(parseInt(event.target.value));
+                      }}
+                    />
+                  </Stack>
+                  <Stack width={100}>
+                    Score Weight
+                    <TextField
+                      inputProps={{ type: "number" }}
+                      value={scoreWeight}
+                      onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>,
+                      ) => {
+                        setScoreWeight(parseInt(event.target.value));
+                      }}
+                    />
+                  </Stack>
+                </Stack>
+                <Stack width={100}>
+                  Scope
+                  <TextField
+                    inputProps={{ type: "number" }}
+                    value={scope}
+                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                      setScope(parseInt(event.target.value));
+                    }}
+                  />
+                </Stack>
+              </Stack>
+            </React.Fragment>
           )}
         </Stack>
       </Stack>

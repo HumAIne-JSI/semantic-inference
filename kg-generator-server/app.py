@@ -48,7 +48,7 @@ def commit_triples():
         input_triples = request.json.get('triples')
         print("commiting")
         graph_store._upsert_triples(input_triples)
-        print("commited", len(input_triples), input_triples[0])
+        print("commited", len(input_triples))
         return jsonify({})
 
     except Exception as e:
@@ -73,8 +73,14 @@ def remove_words_with_substring(input_string, substring):
 def query():
     try:
         input_string = request.json.get('query')
-        print("input:", input_string)
-        answer = chat_engine.chat(input_string)
+        breadth = request.json.get('breadth')
+        scope = request.json.get('scope')
+        score_weight = request.json.get('score_weight')
+        print("input:", input_string, "breadth:", breadth, "scope:", scope, "score weight:", score_weight)
+        graph_store.width = breadth
+        graph_store.quantity = scope
+        graph_store.score_weight = score_weight
+        answer = query_engine.query(input_string)
         print(answer.response, type(answer.response))
         return jsonify({'answer': answer.response})
 
@@ -106,25 +112,59 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
         url,
         graphDBgraph
     )
-    query = f"""
-    PREFIX : <http://www.ontotext.com/connectors/lucene#>
-    PREFIX inst: <http://www.ontotext.com/connectors/lucene/instance#>
+    # query = f"""
+    # PREFIX : <http://www.ontotext.com/connectors/lucene#>
+    # PREFIX inst: <http://www.ontotext.com/connectors/lucene/instance#>
 
-    INSERT DATA {{
-    inst:search :createConnector '''
+    # INSERT DATA {{
+    # inst:search :createConnector '''
+    #     {{
+    #     "fields": [
+    #         {{
+    #         "fieldName": "search",
+    #         "propertyChain": [
+    #             "http://www.w3.org/2000/01/rdf-schema#label"
+    #         ],
+    #         "indexed": true,
+    #         "stored": true,
+    #         "analyzed": true,
+    #         "multivalued": true,
+    #         "ignoreInvalidValues": false,
+    #         "facet": true
+    #         }}
+    #     ],
+    #     "languages": [],
+    #     "types": [
+    #         "{graphDBgraph}"
+    #     ],
+    #     "readonly": false,
+    #     "detectFields": false,
+    #     "importGraph": false,
+    #     "skipInitialIndexing": false,
+    #     "boostProperties": [],
+    #     "stripMarkup": false
+    #     }}
+    # ''' .
+    # }}
+    # """
+    # print(query)
+    
+    query = f"""
+        PREFIX :<http://www.ontotext.com/connectors/retrieval#>
+        PREFIX inst:<http://www.ontotext.com/connectors/retrieval/instance#>
+        INSERT DATA {{
+            inst:gpt-search :createConnector '''
         {{
         "fields": [
             {{
-            "fieldName": "search",
+            "fieldName": "gpt-search",
             "propertyChain": [
                 "http://www.w3.org/2000/01/rdf-schema#label"
             ],
             "indexed": true,
-            "stored": true,
-            "analyzed": true,
             "multivalued": true,
-            "ignoreInvalidValues": false,
-            "facet": true
+            "fieldTextPrefix": "has {{}}",
+            "objectFields": []
             }}
         ],
         "languages": [],
@@ -135,14 +175,17 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
         "detectFields": false,
         "importGraph": false,
         "skipInitialIndexing": false,
-        "boostProperties": [],
-        "stripMarkup": false
+        "retrievalUrl": "http://localhost:8000",
+        "retrievalBearerToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "bulkUpdateBatchSize": 1000
         }}
-    ''' .
-    }}
-    """
+        ''' .
+        }}
+        """
+
+
     print(query)
-    
+
     try:
         import SPARQLWrapper
         sparql = SPARQLWrapper.SPARQLWrapper(url + "/statements")
@@ -153,8 +196,8 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
         print("Connector already exists")
     global query_engine
     query_engine = get_query_engine(graph_store)
-    global chat_engine
-    chat_engine = get_chat_engine(query_engine)
+    # global chat_engine
+    # chat_engine = get_chat_engine(query_engine)
 
 
 

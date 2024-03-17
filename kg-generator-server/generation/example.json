@@ -1,0 +1,2846 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "QuantumPro X1",
+      "description": [
+        {
+          "language": "en",
+          "text": "The QuantumPro X1 is a precision drilling marvel designed for woodworking enthusiasts. With its advanced gyroscopic stabilization technology and variable speed control, this driller ensures unparalleled accuracy and ease of use. Its sleek design and ergonomic grip make it a favorite among DIYers and professionals alike."
+        }
+      ],
+      "id": "7puiJHpoHy",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "5fhRxjmpWW"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "WrDvpiHAIN"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "dJooF2yGuI"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "EcoDrive Elite",
+      "description": [
+        {
+          "language": "en",
+          "text": "The EcoDrive Elite is a sustainable drilling solution for eco-conscious users. Powered by a cutting-edge solar-charged battery, this driller combines efficiency with environmental responsibility. Ideal for various materials, the EcoDrive Elite is perfect for those who prioritize both performance and sustainability in their projects."
+        }
+      ],
+      "id": "9g16NLrEPF",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "k0SKaZUtXS"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "WrkRkja688"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Nbr3xobrEh"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "TitanCraft Pro-1",
+      "description": [
+        {
+          "language": "en",
+          "text": "The TitanCraft Pro-1 is a rugged and robust driller built for heavy-duty tasks. With its high torque motor and durable metal construction, this powerhouse excels in drilling through tough materials such as metal and masonry. The TitanCraft Pro-1 is a reliable choice for professionals requiring strength and endurance in their drilling endeavors."
+        }
+      ],
+      "id": "VxwrB2S9Tx",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "otLm3jE6t9"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "RLgg8DEISd"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "PZr4lT0VKi"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SwiftDrill Precision",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SwiftDrill Precision is a compact and lightweight driller designed for fine detailing and intricate work. Its precise control and minimal vibration ensure a steady hand for delicate tasks. DIY hobbyists and artisans appreciate the SwiftDrill Precision for its ease of maneuverability and exceptional accuracy."
+        }
+      ],
+      "id": "anTYJk2Txy",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "6GSILLAIB0"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "wSu3w9Cf0p"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "ej5iWmlJb5"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SolarSprint 2000",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SolarSprint 2000 is a state-of-the-art solar-powered driller that combines efficiency with environmental sustainability. Perfect for light to medium-duty tasks, this driller's innovative energy source provides users with a reliable and eco-friendly option for their drilling needs."
+        }
+      ],
+      "id": "Op54Fagzf1",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "L4CFtXDdRq"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "paTX7Bpaet"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "AmwEt2mJSn"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "MegaForce Turbo",
+      "description": [
+        {
+          "language": "en",
+          "text": "The MegaForce Turbo is a high-performance driller engineered for speed and power. With its turbocharged motor and advanced cooling system, this driller excels in quick and efficient drilling tasks. The MegaForce Turbo is the go-to choice for professionals who demand rapid results without compromising on durability."
+        }
+      ],
+      "id": "IUCSrhWcYI",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "asBIFJMqPK"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "syY8ipuoWt"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "PXmz83Yluq"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "GreenHarmony EcoPro",
+      "description": [
+        {
+          "language": "en",
+          "text": "The GreenHarmony EcoPro is a revolutionary driller that sets new standards in sustainability and performance. Powered by a combination of solar energy and recycled materials, this environmentally conscious driller is ideal for users who prioritize green technology without compromising on power. The GreenHarmony EcoPro is the perfect blend of eco-friendliness and top-notch drilling capabilities, making it a standout choice for the conscientious DIY enthusiast."
+        }
+      ],
+      "id": "hfl1dcxPmc",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "WGFlHkFmH3"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "K3bB1xPLdW"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "03K3yp4HpT"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "CirclerPro X2",
+      "description": [
+        {
+          "language": "en",
+          "text": "The CirclerPro X2 is a precision circle cutting machine designed for woodworking enthusiasts. With advanced features and adjustable parameters, this circle cutter ensures precise and smooth cuts. Its ergonomic design and user-friendly interface make it a favorite among DIYers and professionals alike."
+        }
+      ],
+      "id": "CLftTU545V",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "F8BRWnfi6l"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "9mmqA8vBxa"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "JvJiWPMUn1"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "EcoRound Precision",
+      "description": [
+        {
+          "language": "en",
+          "text": "The EcoRound Precision is a sustainable circle cutting solution for eco-conscious users. Powered by a cutting-edge solar-charged battery, this circle cutter combines efficiency with environmental responsibility. Ideal for various materials, the EcoRound Precision is perfect for those who prioritize both performance and sustainability in their projects."
+        }
+      ],
+      "id": "o7Oi2ZP9RL",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "unRr5ZS9K4"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "n6NGzkCJnO"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "7ZR6oWXyPQ"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "TitanCut CircleMaster",
+      "description": [
+        {
+          "language": "en",
+          "text": "The TitanCut CircleMaster is a rugged and versatile circle cutting machine built for heavy-duty tasks. With its high cutting speed and durable construction, this powerhouse excels in cutting through various materials. The TitanCut CircleMaster is a reliable choice for professionals requiring strength and precision in their circle cutting endeavors."
+        }
+      ],
+      "id": "ZLzjt5Exwn",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "JdhH5QcrAU"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "2UlMUhF1V5"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "8mUYreXRSU"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SwiftCircle Elite",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SwiftCircle Elite is a compact and lightweight circle cutter designed for fine detailing and intricate work. Its precise control and minimal vibration ensure a steady hand for delicate tasks. DIY hobbyists and artisans appreciate the SwiftCircle Elite for its ease of maneuverability and exceptional accuracy."
+        }
+      ],
+      "id": "EAWOfqrkar",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "zQ7ccOfH3S"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "3qL4Ma0fc1"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "a4l4hnSGBI"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SolarSphere 3000",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SolarSphere 3000 is a state-of-the-art solar-powered circle cutting machine that combines efficiency with environmental sustainability. Perfect for light to medium-duty tasks, this circle cutter's innovative energy source provides users with a reliable and eco-friendly option for their cutting needs."
+        }
+      ],
+      "id": "CIDVxq65It",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "8DWhSJPpcL"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "86z176dBbg"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "twMW3bg7V8"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "MegaRound Turbo",
+      "description": [
+        {
+          "language": "en",
+          "text": "The MegaRound Turbo is a high-performance circle cutting machine engineered for speed and power. With its turbocharged cutting mechanism and advanced cooling system, this circle cutter excels in quick and efficient cutting tasks. The MegaRound Turbo is the go-to choice for professionals who demand rapid results without compromising on durability."
+        }
+      ],
+      "id": "IkRrm4nFsc",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "KobUSy5sVB"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "zpXtXXSweQ"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "6krrkmTr9c"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "GreenCirc HarmonyPro",
+      "description": [
+        {
+          "language": "en",
+          "text": "The GreenCirc HarmonyPro is a revolutionary circle cutting machine that sets new standards in sustainability and performance. Powered by a combination of solar energy and recycled materials, this environmentally conscious circle cutter is ideal for users who prioritize green technology without compromising on cutting precision. The GreenCirc HarmonyPro is the perfect blend of eco-friendliness and top-notch circle cutting capabilities, making it a standout choice for the conscientious DIY enthusiast."
+        }
+      ],
+      "id": "eEuOuI3zyE",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "7F9yHiXgSe"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "StdCh0GSR4"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Pfrci0Hyc2"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "CircuMax Pro-3000",
+      "description": [
+        {
+          "language": "en",
+          "text": "The CircuMax Pro-3000 is a high-performance circular saw designed for woodworking enthusiasts and professionals. With its powerful motor and precision blade, this circular saw delivers accurate and efficient cuts. The CircuMax Pro-3000 is a top choice for those seeking reliability and versatility in their cutting projects."
+        }
+      ],
+      "id": "PpxiMUowBX",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "5cPXQehjy2"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "8ThMlVw1Fo"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "FkpgPssYpe"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "EcoBlade Elite",
+      "description": [
+        {
+          "language": "en",
+          "text": "The EcoBlade Elite is an environmentally conscious circular saw from EnviroTech Saws. Powered by a rechargeable eco-battery, this saw combines cutting-edge technology with sustainability. Ideal for various materials, the EcoBlade Elite is perfect for users who prioritize both performance and eco-friendly practices in their projects."
+        }
+      ],
+      "id": "w7VOnmrSFd",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "WKwm6i5BVd"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "WpwK1zlYF3"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "xYVKn7aqCy"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "TitanSaw Master-2",
+      "description": [
+        {
+          "language": "en",
+          "text": "The TitanSaw Master-2 is an upgraded version of TitanCraft Engineering's renowned circular saw. With enhanced cutting speed and precision, this saw is a reliable companion for professionals tackling demanding projects. The TitanSaw Master-2 excels in providing accurate and efficient results, making it a go-to choice for woodworking experts."
+        }
+      ],
+      "id": "2bvM2qKkZP",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "hWFIlgyVqx"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "ibcDlfupMk"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "0fBCuVAW6Y"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SwiftCut Precision",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SwiftCut Precision is a compact and agile circular saw designed for quick and precise cuts. With its swift cutting mechanism and ergonomic design, this saw is perfect for users who need a versatile tool for on-the-go projects. DIYers and hobbyists appreciate the SwiftCut Precision for its portability and accuracy."
+        }
+      ],
+      "id": "mUqBWg57ho",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "yLEA4Xw5wz"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "qW5LIV3xWi"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "aVipLUHvHm"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SolarBlade 4000",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SolarBlade 4000 is a state-of-the-art solar-powered circular saw that combines efficiency with environmental sustainability. Perfect for light to medium-duty tasks, this saw's innovative energy source provides users with a reliable and eco-friendly option for their cutting needs."
+        }
+      ],
+      "id": "CbzYq7TjJk",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "RptAIDwUnD"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "0Oc58Wl99r"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "tASVVQTATl"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "MegaSaw Turbo",
+      "description": [
+        {
+          "language": "en",
+          "text": "The MegaSaw Turbo is a powerhouse in the world of circular saws, brought to you by TitanCraft Engineering. With its high-speed turbocharged cutting system and heavy-duty construction, this saw tackles the toughest materials with ease. The MegaSaw Turbo is the ultimate choice for professionals seeking maximum performance and durability in their cutting tools."
+        }
+      ],
+      "id": "7PKtq8ci4l",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "FuEWKOy1pG"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "0R4I5QfF6V"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "hYE7fY5seG"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "GreenCut HarmonyPro",
+      "description": [
+        {
+          "language": "en",
+          "text": "The GreenCut HarmonyPro is a revolutionary circular saw that sets new standards in sustainability and performance. Powered by a combination of solar energy and recycled materials, this environmentally conscious saw is ideal for users who prioritize green technology without compromising on cutting precision. The GreenCut HarmonyPro is the perfect blend of eco-friendliness and top-notch cutting capabilities."
+        }
+      ],
+      "id": "T5MOZ86IpA",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "79U4VaTJ4t"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "LPasgppMPV"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "fUzKXWQrpB"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "PrecisionBlade X4",
+      "description": [
+        {
+          "language": "en",
+          "text": "The PrecisionBlade X4 is a high-precision circular saw designed for fine woodworking and crafting. With advanced laser-guided technology and customizable cutting patterns, this saw provides unmatched accuracy and versatility. DIY enthusiasts and artists appreciate the PrecisionBlade X4 for its ability to create intricate designs with ease."
+        }
+      ],
+      "id": "RobTefdT54",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "slhFVi1bqt"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "ykrUKaDzl2"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "cspVLxrArs"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "EcoSaw Pro",
+      "description": [
+        {
+          "language": "en",
+          "text": "The EcoSaw Pro is an environmentally friendly circular saw from EnviroTech Saws. Powered by a rechargeable eco-battery, this saw combines efficiency with a commitment to sustainability. Perfect for various materials, the EcoSaw Pro is a go-to choice for users who value both performance and eco-consciousness in their projects."
+        }
+      ],
+      "id": "fAlgosMVzA",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "Lr0kQ9Gnya"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "gzhcIc9YUT"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "dk8bGGQa9k"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "TitanBlade Max-3",
+      "description": [
+        {
+          "language": "en",
+          "text": "The TitanBlade Max-3 is a rugged and versatile circular saw built for heavy-duty tasks. With its high cutting speed and durable construction, this powerhouse excels in cutting through various materials. The TitanBlade Max-3 is a reliable choice for professionals requiring strength and precision in their cutting endeavors."
+        }
+      ],
+      "id": "a6kncd9IBC",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "4Ev2QxEk1w"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "krkCZQ64dm"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "zdXcAoIiuI"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "SwiftSaw Precision",
+      "description": [
+        {
+          "language": "en",
+          "text": "The SwiftSaw Precision is a compact and lightweight circular saw designed for fine detailing and intricate work. Its precise control and minimal vibration ensure a steady hand for delicate tasks. DIY hobbyists and artisans appreciate the SwiftSaw Precision for its ease of maneuverability and exceptional accuracy."
+        }
+      ],
+      "id": "6LbmY1kOXv",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "hjWTi8WAW8"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "hTWL32OBPS"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "M47s5Dihek"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    },
+    {
+      "idShort": "MegaCut TurboMax",
+      "description": [
+        {
+          "language": "en",
+          "text": "The MegaCut TurboMax is a high-performance circular saw engineered for speed and power. With its turbocharged cutting mechanism and advanced cooling system, this saw excels in quick and efficient cutting tasks. The MegaCut TurboMax is the go-to choice for professionals who demand rapid results without compromising on durability."
+        }
+      ],
+      "id": "k7likwkwvx",
+      "assetInformation": {
+        "assetKind": "Type"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "S6Tr8hgWgf"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "SJ5H1MCB22"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "qFjSgmqKSa"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "5fhRxjmpWW",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "0.2",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "52.5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "WrDvpiHAIN",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "dJooF2yGuI",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "1",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "k0SKaZUtXS",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "1.5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "22.4",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "WrkRkja688",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Drills",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "Nbr3xobrEh",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "3",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "otLm3jE6t9",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "6.7",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "5.6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "RLgg8DEISd",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "PZr4lT0VKi",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "9",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "6GSILLAIB0",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "7.6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "3.6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "wSu3w9Cf0p",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "ej5iWmlJb5",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "2",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "L4CFtXDdRq",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "5.0",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "74.0",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "paTX7Bpaet",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Drills",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "AmwEt2mJSn",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "2",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "asBIFJMqPK",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "2.2",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "20.5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "syY8ipuoWt",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "PXmz83Yluq",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "8",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "2",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Drilling",
+      "description": [
+        {
+          "language": "en",
+          "text": "Hole drilling capability of the asset"
+        }
+      ],
+      "id": "WGFlHkFmH3",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in millimeters",
+          "valueType": "xs:double",
+          "value": "2.1",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in millimeters",
+          "valueType": "xs:double",
+          "value": "76.9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "K3bB1xPLdW",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Drills",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "03K3yp4HpT",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "8",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "F8BRWnfi6l",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "0.3",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "15.2",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "9mmqA8vBxa",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "JvJiWPMUn1",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "9",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "unRr5ZS9K4",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "9.5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "11.5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "n6NGzkCJnO",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Cutters",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "7ZR6oWXyPQ",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "8",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "JdhH5QcrAU",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "4.3",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "63.7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "2UlMUhF1V5",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "8mUYreXRSU",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "2",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "zQ7ccOfH3S",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "9.5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "46.9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "3qL4Ma0fc1",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "a4l4hnSGBI",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "8DWhSJPpcL",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "5.6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "18.3",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "86z176dBbg",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Cutters",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "twMW3bg7V8",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "9",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "KobUSy5sVB",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "7.1",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "49.9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "zpXtXXSweQ",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "6krrkmTr9c",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Circle Cutting",
+      "description": [
+        {
+          "language": "en",
+          "text": "Circular hole cutting capability of the asset"
+        }
+      ],
+      "id": "7F9yHiXgSe",
+      "submodelElements": [
+        {
+          "idShort": "Hole Diameter in centimeters",
+          "valueType": "xs:double",
+          "value": "8.0",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Hole Depth in centimeters",
+          "valueType": "xs:double",
+          "value": "97.5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "StdCh0GSR4",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Cutters",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "Pfrci0Hyc2",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "3",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "1",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "5cPXQehjy2",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "81.7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "8ThMlVw1Fo",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "FkpgPssYpe",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "WKwm6i5BVd",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "89.6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "WpwK1zlYF3",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Saws",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "xYVKn7aqCy",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "hWFIlgyVqx",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "35.4",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "ibcDlfupMk",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "0fBCuVAW6Y",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "4",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "yLEA4Xw5wz",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "81.0",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "qW5LIV3xWi",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "aVipLUHvHm",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "RptAIDwUnD",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "32.7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "0Oc58Wl99r",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Saws",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "tASVVQTATl",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "1",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "FuEWKOy1pG",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "65.0",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "0R4I5QfF6V",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "hYE7fY5seG",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "79U4VaTJ4t",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "47.6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "LPasgppMPV",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Saws",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "fUzKXWQrpB",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "slhFVi1bqt",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "77.2",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "ykrUKaDzl2",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "cspVLxrArs",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "10",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "4",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "Lr0kQ9Gnya",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "24.8",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "gzhcIc9YUT",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "EnviroTech Saws",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "dk8bGGQa9k",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "2",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "1",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "4Ev2QxEk1w",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "49.9",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "krkCZQ64dm",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "zdXcAoIiuI",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "hjWTi8WAW8",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "1.6",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "hTWL32OBPS",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "QuantumTech Industries",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "M47s5Dihek",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "5",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Sawing",
+      "description": [
+        {
+          "language": "en",
+          "text": "Sawing capability of the asset"
+        }
+      ],
+      "id": "S6Tr8hgWgf",
+      "submodelElements": [
+        {
+          "idShort": "Circular saw cutting depth in millimeters",
+          "valueType": "xs:double",
+          "value": "38.7",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Manufacturer",
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer of the asset"
+        }
+      ],
+      "id": "SJ5H1MCB22",
+      "submodelElements": [
+        {
+          "idShort": "Manufacturer Name",
+          "valueType": "xs:string",
+          "value": "TitanCraft Engineering",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Energy Consumption",
+      "description": [
+        {
+          "language": "en",
+          "text": "How much electricity the asset consumes in operation."
+        }
+      ],
+      "id": "qFjSgmqKSa",
+      "submodelElements": [
+        {
+          "idShort": "Required Voltage in volts",
+          "valueType": "xs:int",
+          "value": "7",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "Required Current in amperes",
+          "valueType": "xs:int",
+          "value": "4",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}
