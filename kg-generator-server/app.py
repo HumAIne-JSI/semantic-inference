@@ -202,18 +202,19 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
 
 
 if __name__ == '__main__':
+    print("STARTING")
     parser = argparse.ArgumentParser()
-    parser.add_argument('--host', type=str, default='127.0.0.1', help='Hostname or IP address (default: 127.0.0.1)')
+    parser.add_argument('--host', type=str, default='0.0.0.0', help='Hostname or IP address (default: 0.0.0.0)')
     parser.add_argument('--port', type=int, default=5000, help='Port number (default: 5000)')
     parser.add_argument('--debug', type=bool, default=False, help='Run in debug mode (Flask)?')
-    parser.add_argument('--graphDBhost', type=str, default='127.0.0.1', help='graphDB host')
+    parser.add_argument('--graphDBhost', type=str, default='graphdb', help='graphDB host')
     parser.add_argument('--graphDBport', type=str, default=7200, help='graphDB port')
     parser.add_argument('--graphDBrepository', type=str, default='Knowledge-Graph', help='graphDB repository name')
     parser.add_argument('--graphDBgraph', type=str, default='http://knowledge-graph.com', help='graphDB graph name')
     args = parser.parse_args()
     
     setup_graphDB_repo(args.graphDBhost, args.graphDBport, args.graphDBrepository, args.graphDBgraph)
-
+    print("FINISHED")
     if "--debug" in sys.argv:
         app.run(debug=True, host=args.host, port=args.port)
     else:
