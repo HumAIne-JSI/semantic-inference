@@ -12,7 +12,7 @@ from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.chat_engine import ContextChatEngine
 from llama_index.core import Prompt
 
-def get_query_engine(graph_store):
+def get_query_engine(graph_store, llmModel="gpt-4-0125-preview"):
     storage_context = StorageContext.from_defaults(graph_store=graph_store)
     load_dotenv()
 

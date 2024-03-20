@@ -78,11 +78,12 @@ def query():
         breadth = request.json.get('breadth')
         scope = request.json.get('scope')
         score_weight = request.json.get('score_weight')
+        llmModel = request.json.get("llmModel")
         print("input:", input_string, "breadth:", breadth, "scope:", scope, "score weight:", score_weight)
         graph_store.width = breadth
         graph_store.quantity = scope
         graph_store.score_weight = score_weight
-        answer = query_engine.query(input_string)
+        answer = get_query_engine(graph_store, llmModel).query(input_string)
         print(answer.response, type(answer.response))
         return jsonify({'answer': answer.response})
 
@@ -218,7 +219,7 @@ if __name__ == '__main__':
     parser.add_argument('--graphDBrepository', type=str, default='Knowledge-Graph', help='graphDB repository name')
     parser.add_argument('--graphDBgraph', type=str, default='http://knowledge-graph.com', help='graphDB graph name')
     args = parser.parse_args()
-    
+    print(args.graphDBhost)
     setup_graphDB_repo(args.graphDBhost, args.graphDBport, args.graphDBrepository, args.graphDBgraph, args.hostFromOutside)
     if "--debug" in sys.argv:
         app.run(debug=True, host=args.host, port=args.port)

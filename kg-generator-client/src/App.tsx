@@ -29,6 +29,7 @@ function App() {
   );
   const [gettingTriplesFromMultipleFiles, setGettingTriplesFromMultipleFiles] =
     React.useState(false);
+  const [llmModel, setLlmModel] = React.useState("gpt-4-1106-preview");
   const serverAddress =
     "http://" +
     (process.env.REACT_APP_SERVER_HOST || "127.0.0.1") +
@@ -56,6 +57,7 @@ function App() {
         breadth: breadth,
         scope: scope,
         score_weight: scoreWeight,
+        llmModel: llmModel,
       });
     },
     onSuccess: (response) => {
@@ -299,6 +301,30 @@ function App() {
               >
                 Run Query
               </Button>
+              <FormControl fullWidth style={{ marginTop: "15px" }}>
+                <InputLabel id="demo-simple-select-label">
+                  OpenAI Model
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={llmModel}
+                  label="Age"
+                  onChange={(event) => {
+                    setLlmModel(event.target.value as string);
+                  }}
+                >
+                  <MenuItem value={"gpt-4-0125-preview"}>
+                    gpt-4-0125-preview
+                  </MenuItem>
+                  <MenuItem value={"gpt-4-1106-preview"}>
+                    gpt-4-1106-preview
+                  </MenuItem>
+                  <MenuItem value={"gpt-3.5-turbo-0125"}>
+                    gpt-3.5-turbo-0125
+                  </MenuItem>
+                </Select>
+              </FormControl>
               <Stack
                 style={{
                   flexDirection: "row",
