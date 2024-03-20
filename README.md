@@ -15,6 +15,15 @@ Client-Server application for constructing Knowledge Graphs through user input (
 
 ## Docker setup
 
+Running buildAndStart.sh runs buildImages.sh that builds 2 docker images for the client and the server parts. It is possible to set your own parameters such as what ports should be used, but the default settings should work as well. After that start.sh is ran which runs 3 docker images:
+
+- GraphDB docker image (publicly available)
+- Client docker image (can supply parameters for what server address it uses, by default localhost:5000)
+- Server docker image, which apart from the Flask server also runs the ChatGPT Retrieval Plugin.
+  - ''IMPORTANT'': for the ChatGPT Retrieval Plugin to work you should put an .env file in the kg-generator-server.
+    It should export enviromental variables as specified at https://github.com/openai/chatgpt-retrieval-plugin. The specified OpenAI
+    token is also used by the server for answering user queries.
+
 ## Non-docker setup (still makes sense, however some defaults might have changed to make more sense for docker)
 
 ### GraphDB

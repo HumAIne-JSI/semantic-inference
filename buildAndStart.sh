@@ -1,0 +1,2 @@
+./buildImages.sh
+./start.sh
