@@ -6,13 +6,16 @@ Client-Server application for constructing Knowledge Graphs through user input (
 
 ## Index
 
-1. [Setup](#setup)
+1. [Docker Setup](#docker-setup)
+2. [Setup](#setup)
    - [GraphDB Setup](#GraphDB)
    - [Server Setup](#Server)
    - [Client Setup](#Client)
-2. [Llama_index](#Llama_index)
+3. [Llama_index](#Llama_index)
 
-## Setup
+## Docker setup
+
+## Non-docker setup (still makes sense, however some defaults might have changed to make more sense for docker)
 
 ### GraphDB
 

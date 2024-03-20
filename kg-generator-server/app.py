@@ -9,8 +9,10 @@ from waitress import serve
 
 from GraphDBStore import GraphDBStore
 from llm import get_query_engine, get_chat_engine
+from datetime import datetime
 
-
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 
@@ -90,13 +92,17 @@ def query():
 
 
 
-def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph):
+def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph, hostFromOutside):
 
     url = f"http://{graphDBhost}:{graphDBport}/repositories/{graphDBrepository}"
     rest_url = f"http://{graphDBhost}:{graphDBport}/rest/repositories/"
-    print(url)
     headers = {'Accept': 'application/json'}
-    response = requests.get(url, headers=headers)
+    session = requests.Session()
+    retry = Retry(connect=6, backoff_factor=1)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    response = session.get(url, headers=headers)
     print(response.status_code, response.text)
     if (response.status_code == 404):
         # create repo
@@ -175,7 +181,7 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
         "detectFields": false,
         "importGraph": false,
         "skipInitialIndexing": false,
-        "retrievalUrl": "http://localhost:8000",
+        "retrievalUrl": "http://{hostFromOutside}:8000",
         "retrievalBearerToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         "bulkUpdateBatchSize": 1000
         }}
@@ -202,9 +208,9 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
 
 
 if __name__ == '__main__':
-    print("STARTING")
     parser = argparse.ArgumentParser()
     parser.add_argument('--host', type=str, default='0.0.0.0', help='Hostname or IP address (default: 0.0.0.0)')
+    parser.add_argument('--hostFromOutside', type=str, default='server', help='What hostname graphdb uses to connect to this server')
     parser.add_argument('--port', type=int, default=5000, help='Port number (default: 5000)')
     parser.add_argument('--debug', type=bool, default=False, help='Run in debug mode (Flask)?')
     parser.add_argument('--graphDBhost', type=str, default='graphdb', help='graphDB host')
@@ -213,8 +219,7 @@ if __name__ == '__main__':
     parser.add_argument('--graphDBgraph', type=str, default='http://knowledge-graph.com', help='graphDB graph name')
     args = parser.parse_args()
     
-    setup_graphDB_repo(args.graphDBhost, args.graphDBport, args.graphDBrepository, args.graphDBgraph)
-    print("FINISHED")
+    setup_graphDB_repo(args.graphDBhost, args.graphDBport, args.graphDBrepository, args.graphDBgraph, args.hostFromOutside)
     if "--debug" in sys.argv:
         app.run(debug=True, host=args.host, port=args.port)
     else:

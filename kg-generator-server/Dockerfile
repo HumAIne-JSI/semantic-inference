@@ -12,7 +12,7 @@ RUN git clone --depth 1 https://github.com/openai/chatgpt-retrieval-plugin.git
 COPY setup.sh .
 
 COPY requirements.txt .
-COPY runPlugin.sh .
+COPY run.sh .
 COPY .env .
 COPY *.py .
 COPY Knowledge-Graph-Test-config.ttl .
@@ -30,4 +30,5 @@ EXPOSE 5000
 RUN ./runPlugin.sh &
 # Command to run the application
 
-CMD ["python", "app.py"]
+ENTRYPOINT [ "./run.sh" ]
+CMD []
