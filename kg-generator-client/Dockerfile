@@ -9,7 +9,9 @@ COPY . .
 
 RUN npm run build
 
+RUN npm -g install serve
+
 EXPOSE 3000
 
 # Define the command to run the app
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build"]
