@@ -40,11 +40,13 @@ class GraphDBStore(GraphStore):
         random_uri = "http://www.entity-with-random-id/",
         value_uri = "http://www.value/",
         predicate_uri = "http://www.predicate/",
+        frequent_predicate_uri="http://www.frequent-predicate/"
         # data: Optional[SimpleGraphStoreData] = None,
     ) -> None:
         self.random_uri = random_uri
         self.value_uri = value_uri
         self.predicate_uri = predicate_uri
+        self.frequent_predicate_uri = frequent_predicate_uri
         self.graph_name = graph_name
         self.graph_write = Graph(store='SPARQLUpdateStore', identifier=self.graph_name)
         self.graph_write.open(f'{sparql_endpoint}/statements')
@@ -95,20 +97,22 @@ class GraphDBStore(GraphStore):
         print("TU")
 
     
-        def get_uri(text, is_literal=False):
+        def get_uri(text, is_literal=False, is_frequent_predicate=False):
+            if is_frequent_predicate:
+                return URIRef(self.frequent_predicate_uri + text)
             if is_literal:
                 return URIRef(self.value_uri + text)
             return URIRef(self.random_uri + text)
 
-        def add_triple(a, b, c, last_is_literal=False):
-            triple = map(lambda e : get_uri(quote_plus(str(e)), True if last_is_literal and e == c else False), (a, b, c))
+        def add_triple(a, b, c, last_is_literal=False, is_frequent_predicate=False):
+            triple = map(lambda e : get_uri(quote_plus(str(e[1])), True if last_is_literal and e[0] == 2 else False, True if is_frequent_predicate and e[0] == 1 else False), enumerate((a, b, c)))
             a2, b2, c2 = triple
             triples.append({'readable': {'subject': a, 'predicate': b, 'object': c}, 'processed': {'subject': a2, 'predicate': b2, 'object': c2}})
         for e in environment.descend():
             # print(type(something) == aas_types.AssetAdministrationShell, dir(something))
             if (type(e) == aas_types.AssetAdministrationShell):
                 if e.asset_information.asset_kind == aas_types.AssetKind.INSTANCE:
-                    add_triple(e.id, "is instance of", e.derived_from.keys[0].value)
+                    add_triple(e.id, "is instance of", e.derived_from.keys[0].value, False, True)
                 for submodel in e.submodels:
                     add_triple(submodel.keys[0].value, f'is part of / describes', e.id)
                 add_triple(e.id, "has description", e.description[0].text, True)
@@ -199,7 +203,7 @@ class GraphDBStore(GraphStore):
                 GRAPH <{self.graph_name}> {{
                     ?s ?a <{uri}> .
                 }}
-                FILTER(?a != rdfs:label && ?a != rdf:type) .
+                FILTER(?a != rdfs:label && ?a != rdf:type && !STRSTARTS(STR(?a), "http://www.frequent-predicate/")) .
             }}
             LIMIT {limit}
         """
@@ -239,7 +243,7 @@ class GraphDBStore(GraphStore):
         used = 0
         while not q.empty():
             subj, pred, obj, cdepth, prev, current = q.get()
-            print(subj, pred, obj, cdepth, prev, current)
+            # print(subj, pred, obj, cdepth, prev, current)
             if cdepth > depth:
                 break
             if cdepth > 0:
@@ -248,6 +252,7 @@ class GraphDBStore(GraphStore):
                 triple = [self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)]
                 if triple not in rel_map[self.unURIfy(subj)]:
                     rel_map[self.unURIfy(subj)].append([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
+                    print([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
                     used += 1
                     if used >= limit:
                         break
@@ -267,10 +272,9 @@ class GraphDBStore(GraphStore):
         return limit
 
 
-    def search_for_term(self, term, limit = 3):
-        print("searchin", term)
-        term = ''.join([' ' if char in "()[]-+&!\'\"\*\?{}[]~\\" else char for char in term]).strip()
-        term = re.sub(r'\s+', ' ', term)
+    def search_for_terms(self, terms, limit = 3):
+        print("searchin", terms)
+        map(lambda term : re.sub(r'\s+', ' ', ''.join([' ' if char in "()[]-+&!\'\"\*\?{}[]~\\" else char for char in term]).strip()), terms)
 
         query = f"""
             PREFIX retr: <http://www.ontotext.com/connectors/retrieval#>
@@ -278,7 +282,13 @@ class GraphDBStore(GraphStore):
 
             SELECT * {{
                 [] a retr-index:gpt-search ;
-                retr:query "{term}" ;
+                retr:query '''
+            {{
+              "queries": [
+                {''.join(map(lambda term : f'''{{"query": "{term}",}},''', terms))}
+              ]
+            }}
+        ''' ;
                 retr:limit {self.width};
                 retr:entities ?entity .
                 ?entity retr:score ?score
@@ -303,9 +313,7 @@ class GraphDBStore(GraphStore):
 
         if subjs is None:
             subjs = self._get_all_subjs()
-        new_subjs = []
-        for subj in subjs:
-            new_subjs += self.search_for_term(subj)
+        new_subjs = self.search_for_terms(subjs)
         new_subjs = list(set(new_subjs))
         subj_to_score = {}
         for subj, score in new_subjs:
@@ -367,6 +375,7 @@ class GraphDBStore(GraphStore):
             rel_count += len(rel_map[subj])
         print("to return", return_map)
         return return_map
+    
     
     def get_uri(self, el: str, add_label=False) -> str:
         oldEl = el
@@ -432,8 +441,32 @@ class GraphDBStore(GraphStore):
         raise NotImplementedError("SimpleGraphStore does not support get_schema")
 
     def query(self, query: str, param_map: Optional[Dict[str, Any]] = {}) -> Any:
-        """Query the Simple Graph store."""
-        raise NotImplementedError("SimpleGraphStore does not support query")
+        query = query.lstrip().rstrip()
+        if (query.startswith("assistant: ```sparql")):
+            query = query[len("assistant: ```sparql"):]
+        if (query.startswith("```sparql")):
+            query = query[len("```sparql"):]
+        if (query.endswith("```")):
+            query = query[:-len("```"):]
+        query = query.lstrip().rstrip()
+        print("HERE")
+        print(query)
+        self.sparql.method = 'GET'
+        self.sparql.setQuery(query)
+        self.sparql.setReturnFormat('json')
+        print(self.sparql.query().convert())
+        print(self.sparql.query().convert()['results']['bindings'])
+        print(self.sparql.query().convert()['results']['bindings'][0])
+        print("EH")
+        # print(self.sparql.query().convert()['results']['bindings'][0].keys()[0])
+        # print("UUH")
+        # print(self.sparql.query().convert()['results']['bindings'][0].values()[0])
+        # print("AAH")
+        res2 = list(map(lambda dict : list(map(lambda key:  (key, self.unURIfy(dict[key]['value'])), list(dict.keys()))), self.sparql.query().convert()['results']['bindings']))
+        print("OUT")
+        print(res2)
+        return res2
+
     def unURIfy(self, uri):
         if self.random_uri in uri:
             res = unquote_plus(uri.replace(self.random_uri, ""))
@@ -443,3 +476,5 @@ class GraphDBStore(GraphStore):
             return unquote_plus(uri.replace(self.value_uri, ""))
         if self.predicate_uri in uri:
             return unquote_plus(uri.replace(self.predicate_uri, ""))
+        if self.frequent_predicate_uri in uri:
+            return unquote_plus(uri.replace(self.frequent_predicate_uri, ""))

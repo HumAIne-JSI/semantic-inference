@@ -3,3 +3,4 @@
 test.ipynb
 chatgpt-retrieval-plugin
 graphdb-docker
+__pycache__

@@ -1,6 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Paper, TextField } from "@mui/material";
+import {
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  FormLabel,
+  Paper,
+  TextField,
+} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { Button } from "@mui/material";
 import { Select, MenuItem, InputLabel, FormControl } from "@mui/material";
@@ -9,7 +16,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { Unstable_NumberInput as NumberInput } from "@mui/base/Unstable_NumberInput";
 import ts from "typescript";
-import { Height } from "@mui/icons-material";
+import { CheckBox, Height } from "@mui/icons-material";
 
 enum OperationType {
   Query = "Query",
@@ -30,6 +37,7 @@ function App() {
   const [gettingTriplesFromMultipleFiles, setGettingTriplesFromMultipleFiles] =
     React.useState(false);
   const [llmModel, setLlmModel] = React.useState("gpt-4-1106-preview");
+  const [useQueryGeneration, setUseQueryGeneration] = React.useState(true);
   const serverAddress =
     "http://" +
     (process.env.REACT_APP_SERVER_HOST || "127.0.0.1") +
@@ -58,6 +66,7 @@ function App() {
         scope: scope,
         score_weight: scoreWeight,
         llmModel: llmModel,
+        useQueryGeneration: useQueryGeneration,
       });
     },
     onSuccess: (response) => {
@@ -356,15 +365,54 @@ function App() {
                     />
                   </Stack>
                 </Stack>
-                <Stack width={100}>
-                  Scope
-                  <TextField
-                    inputProps={{ type: "number" }}
-                    value={scope}
-                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                      setScope(parseInt(event.target.value));
-                    }}
-                  />
+                <Stack>
+                  <Stack width={100}>
+                    Scope
+                    <TextField
+                      inputProps={{ type: "number" }}
+                      value={scope}
+                      onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>,
+                      ) => {
+                        setScope(parseInt(event.target.value));
+                      }}
+                    />
+                  </Stack>
+                  <Stack width={100}>
+                    <FormGroup sx={{ marginTop: "8px" }}>
+                      <FormLabel
+                        htmlFor="generate-query-checkbox"
+                        sx={{
+                          textAlign: "center",
+                          cursor: "pointer",
+                          color: "black",
+                          userSelect: "none",
+                        }}
+                      >
+                        Query
+                      </FormLabel>
+                      <Checkbox
+                        id="generate-query-checkbox"
+                        defaultChecked
+                        sx={{ padding: 0 }}
+                        checked={useQueryGeneration}
+                        onChange={(ChangeEvent) =>
+                          setUseQueryGeneration(ChangeEvent.target.checked)
+                        }
+                      />
+                      <FormLabel
+                        htmlFor="generate-query-checkbox"
+                        sx={{
+                          textAlign: "center",
+                          cursor: "pointer",
+                          color: "black",
+                          userSelect: "none",
+                        }}
+                      >
+                        Generation
+                      </FormLabel>
+                    </FormGroup>
+                  </Stack>
                 </Stack>
               </Stack>
             </React.Fragment>

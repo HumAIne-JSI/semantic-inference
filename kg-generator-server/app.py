@@ -8,7 +8,7 @@ import sys
 from waitress import serve
 
 from GraphDBStore import GraphDBStore
-from llm import get_query_engine, get_chat_engine
+from llm import get_query_engine, get_chat_engine, query_engine_query
 from datetime import datetime
 
 from requests.adapters import HTTPAdapter
@@ -79,11 +79,14 @@ def query():
         scope = request.json.get('scope')
         score_weight = request.json.get('score_weight')
         llmModel = request.json.get("llmModel")
+        useQueryGeneration = request.json.get("useQueryGeneration")
         print("input:", input_string, "breadth:", breadth, "scope:", scope, "score weight:", score_weight)
         graph_store.width = breadth
         graph_store.quantity = scope
         graph_store.score_weight = score_weight
-        answer = get_query_engine(graph_store, llmModel).query(input_string)
+        print(llmModel, useQueryGeneration)
+        # answer = get_query_engine(graph_store, llmModel).query(input_string)
+        answer = query_engine_query(input_string, graph_store, llmModel, useQueryGeneration)
         print(answer.response, type(answer.response))
         return jsonify({'answer': answer.response})
 
@@ -202,7 +205,7 @@ def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph
     except Exception as e:
         print("Connector already exists")
     global query_engine
-    query_engine = get_query_engine(graph_store)
+    # query_engine = get_query_engine(graph_store)
     # global chat_engine
     # chat_engine = get_chat_engine(query_engine)
 
