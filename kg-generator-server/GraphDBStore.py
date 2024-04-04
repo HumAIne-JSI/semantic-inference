@@ -462,7 +462,7 @@ class GraphDBStore(GraphStore):
         # print("UUH")
         # print(self.sparql.query().convert()['results']['bindings'][0].values()[0])
         # print("AAH")
-        res2 = list(map(lambda dict : list(map(lambda key:  (key, self.unURIfy(dict[key]['value'])), list(dict.keys()))), self.sparql.query().convert()['results']['bindings']))
+        res2 = list(map(lambda dict : list(map(lambda key:  (key, self.unURIfyOrPass(dict[key]['value'])), list(dict.keys()))), self.sparql.query().convert()['results']['bindings']))
         print("OUT")
         print(res2)
         return res2
@@ -478,3 +478,7 @@ class GraphDBStore(GraphStore):
             return unquote_plus(uri.replace(self.predicate_uri, ""))
         if self.frequent_predicate_uri in uri:
             return unquote_plus(uri.replace(self.frequent_predicate_uri, ""))
+        
+    def unURIfyOrPass(self, uri):
+        res = self.unURIfy(uri)
+        return uri if res is None else res

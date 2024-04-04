@@ -35,7 +35,7 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
         http://www.value/ (abbreviated val) for values such as names or numeric values, http://www.entity-with-random-id/ (abbreviated ent) for predicates (unless otherwise specified, sometimes it is http://www.frequent-predicate/ (abbreviated freq)).
 
     Some of the triples in the repository are (ent:machine_instance_id, freq:is+instance+of, ent:machine_model_id), (ent:machine_model_id, ent:has+name, val:machine_model_name), (ent:machine_instance_id, ent:has+name, val:machine_instance_name), (ent:availability_submodel_id, ent:is+part+of+%2F+describes, ent:machine_instance_id), (ent:availability_submodel_id, ent:has+%22Asset+is+available+for+use%22+value, val:boolean_value), val:boolean_value is one of val:False or val:True, (ent:machine_model_id, ent: (ent:general_type_of_machine_submodel_id, ent:is+part+of+%2F+describes, ent:machine_model_id), (ent:general_type_of_machine_submodel_id, ent:has+name, val:general_type_of_machine_submodel_name), the general_type_of_machine_submodel_name is either "Drilling", "Circle cutting" or "Sawing". In SPARQL query don't use PREFIX ent: ..., instead write whole urls, like for instance <http://www.entity-with-random-id/is+part+of+%2F+describes>.  Note that there are no literals in the SPARQL repo, every value is an URI.
-                                        Note that names such as machine_instance_id, machine_model_name, ... are placeholders and not actual values in the repository. Output only the sparql query, no comments. Make sure that the sparql query doesnt return too much, max 20 elements. Its OK to also return values that are related but not exactly what is being asked, for better understanding, e. g. when searching for machine instance names, it also makes sense to search for their model names. Make sure that the (subject, predicate, object) order is as specified!!! Note that it's freq:is+instance+of (expands to http://www.frequent-predicate/is+instance+of)
+                                        Note that names such as machine_instance_id, machine_model_name, ... are placeholders and not actual values in the repository (e. g. DO NOT USE http://www.value/machine_model_name). Output only the sparql query, no comments. Make sure that the sparql query doesnt return too much, max 20 elements. Its OK to also return values that are related but not exactly what is being asked, for better understanding, e. g. when searching for machine instance names, it also makes sense to search for their model names. Make sure that the (subject, predicate, object) order is as specified!!! Note that it's freq:is+instance+of (expands to http://www.frequent-predicate/is+instance+of)
                                         Write sparql query that helps answer: {input_string}.""")])
     sparql_response = None
     def get_sparql_info(**kwargs):
@@ -60,9 +60,10 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
             "\n---------------------\n"
             f"{query_results}"
             "\n---------------------\n"
-            "Note that the response was limited to 20 elements, so if there are 20, perhaps there are more but they weren't listed, user should be informed of this. Try to infer from the sparql query what was actually queried. But don't mention the query to the user, you should just process it internally to produce a sensible answer."
+            "Note that the response was limited to 20 elements, so if there are 20, perhaps there are more but they weren't listed. Try to infer from the sparql query what was actually queried. But don't mention the query to the user, you should just process it internally to produce a sensible answer."
             )
-        except Exception:
+        except Exception as e:
+            print(e)
             sparql_response = ""
 
         print(sparql_response)
