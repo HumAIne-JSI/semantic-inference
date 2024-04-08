@@ -1,0 +1,39 @@
+127.0.0.1
+http://127.0.0.1:7200/repositories/Knowledge-Graph
+400 Missing parameter: query
+400 Missing parameter: query
+http://127.0.0.1:7200/repositories/Knowledge-Graph
+
+        PREFIX :<http://www.ontotext.com/connectors/retrieval#>
+        PREFIX inst:<http://www.ontotext.com/connectors/retrieval/instance#>
+        INSERT DATA {
+            inst:gpt-search :createConnector '''
+        {
+        "fields": [
+            {
+            "fieldName": "gpt-search",
+            "propertyChain": [
+                "http://www.w3.org/2000/01/rdf-schema#label"
+            ],
+            "indexed": true,
+            "multivalued": true,
+            "fieldTextPrefix": "has {}",
+            "objectFields": []
+            }
+        ],
+        "languages": [],
+        "types": [
+            "http://knowledge-graph.com"
+        ],
+        "readonly": false,
+        "detectFields": false,
+        "importGraph": false,
+        "skipInitialIndexing": false,
+        "retrievalUrl": "http://server:8000",
+        "retrievalBearerToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "bulkUpdateBatchSize": 1000
+        }
+        ''' .
+        }
+        
+Connector already exists

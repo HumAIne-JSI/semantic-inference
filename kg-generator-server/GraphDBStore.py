@@ -54,6 +54,7 @@ class GraphDBStore(GraphStore):
         self.sparql_endpoint = sparql_endpoint
         self.all_query_time = 0
         self.sparql = SPARQLWrapper.SPARQLWrapper(self.sparql_endpoint)
+        print(self.sparql_endpoint)
         self.random_id = "c5nLE3vR"
         self.quantity = 100
         self.width = 3
@@ -154,8 +155,8 @@ class GraphDBStore(GraphStore):
         #         FILTER(?a != rdfs:label && ?a != rdf:type) .
         #     }}
         #     LIMIT {limit}
-        # """
-
+        # """   
+        
         query = f"""
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -252,8 +253,9 @@ class GraphDBStore(GraphStore):
                 triple = [self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)]
                 if triple not in rel_map[self.unURIfy(subj)]:
                     rel_map[self.unURIfy(subj)].append([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
-                    print([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
+                    # print([self.unURIfy(subj), self.unURIfy(pred), self.unURIfy(obj)])
                     used += 1
+                    # print(used)
                     if used >= limit:
                         break
             if current not in vis and limit > 0:
@@ -269,7 +271,7 @@ class GraphDBStore(GraphStore):
                             q.put((prev_subj, pred, current, cdepth + 1, current, prev_subj))
             vis.add(obj)
         
-        return limit
+        return used
 
 
     def search_for_terms(self, terms, limit = 3):
@@ -350,6 +352,7 @@ class GraphDBStore(GraphStore):
                 if to_take[i] == 0:
                     continue
                 used = self._get_rel_map(subj, rel_map, depth=6, limit=to_take[i])
+                # print("TUUU ", used)
                 if used < to_take[i]:
                     to_del[subj] = True
                     taken += used

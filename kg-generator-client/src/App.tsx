@@ -113,6 +113,13 @@ function App() {
         }}
         maxRows={1}
         onChange={(e) => setQueryInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key == "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            runQuery.reset();
+            runQuery.mutate();
+          }
+        }}
       />
     ),
 

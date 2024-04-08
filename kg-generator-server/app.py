@@ -15,7 +15,8 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
-
+# log_file = open("app.log","w")
+# sys.stdout = log_file
 
 
 app = Flask(__name__)
@@ -99,6 +100,7 @@ def query():
 def setup_graphDB_repo(graphDBhost, graphDBport, graphDBrepository, graphDBgraph, hostFromOutside):
 
     url = f"http://{graphDBhost}:{graphDBport}/repositories/{graphDBrepository}"
+    print(url)
     rest_url = f"http://{graphDBhost}:{graphDBport}/rest/repositories/"
     headers = {'Accept': 'application/json'}
     session = requests.Session()
