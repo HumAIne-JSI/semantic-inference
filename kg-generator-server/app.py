@@ -89,6 +89,7 @@ def query():
         # answer = get_query_engine(graph_store, llmModel).query(input_string)
         answer = query_engine_query(input_string, graph_store, llmModel, useQueryGeneration)
         print(answer.response, type(answer.response))
+        print("WTF")
         return jsonify({'answer': answer.response})
 
     except Exception as e:

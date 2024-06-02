@@ -78,7 +78,7 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
     "Given this information, please answer the question: {query_str}\n"
     "And try not to refer to an object using it's id, try to refer to it using it's name that is in a human readable format.\n"
     "And submodels are not independent assets, they are a logical part of an asset, it can be some property of an asset. For instance, \n"
-    "a house asset might have a submodel called 'Termal Insulation', this is not a seperate asset, it is something that describes the house asset. Don't mention the 'submodel' concept in your answers because it's an internal one that helps your understanding.\n"
+    "a house asset might have a submodel called 'Termal Insulation', this is not a seperate asset, it is something that describes the house asset. Don't mention the 'submodel' concept in your answers because it's an internal one that helps your understanding. Again, a submodel is something that describes an asset, like a property, not something independent.\n"
     "{sparql_info}"
     )
 
@@ -103,8 +103,7 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
         verbose=True,
         graph_traversal_depth=20,
     )
-
-
+    print("WADAFAK")
     return query_engine
 
 def get_chat_engine(query_engine):
@@ -115,4 +114,7 @@ def get_chat_engine(query_engine):
     return chat_engine
 
 def query_engine_query(input_string, graph_store, llmModel="gpt-4-0125-preview", useQueryGeneration=False):
-    return get_query_engine(graph_store, llmModel, useQueryGeneration, input_string).query(input_string)
+    print("TLE")
+    res = get_query_engine(graph_store, llmModel, useQueryGeneration, input_string).query(input_string)
+    print("HOLY")
+    return res
