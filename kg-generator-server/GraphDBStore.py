@@ -451,9 +451,13 @@ class GraphDBStore(GraphStore):
             query = query[len("```sparql"):]
         if (query.endswith("```")):
             query = query[:-len("```"):]
+        if query.find("```") != -1:
+            query = query[:query.find("```")]
         query = query.lstrip().rstrip()
+        query = re.sub(r'<([^<>]*)>', lambda match: '<' + match.group(1).replace(' ', '+') + '>', query)
         print("HERE")
         print(query)
+        print("tle")
         self.sparql.method = 'GET'
         self.sparql.setQuery(query)
         self.sparql.setReturnFormat('json')

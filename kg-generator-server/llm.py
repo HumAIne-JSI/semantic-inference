@@ -37,7 +37,7 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
     Some of the triples in the repository are (ent:machine_instance_id, freq:is+instance+of, ent:machine_model_id), (ent:machine_model_id, ent:has+name, val:machine_model_name), (ent:machine_instance_id, ent:has+name, val:machine_instance_name), (ent:availability_submodel_id, ent:is+part+of+%2F+describes, ent:machine_instance_id), (ent:availability_submodel_id, ent:has+%22Asset+is+available+for+use%22+value, val:boolean_value), val:boolean_value is one of val:False or val:True, (ent:machine_model_id, ent: (ent:general_type_of_machine_submodel_id, ent:is+part+of+%2F+describes, ent:machine_model_id), (ent:general_type_of_machine_submodel_id, ent:has+name, val:general_type_of_machine_submodel_name), the general_type_of_machine_submodel_name is either "Drilling", "Circle cutting" or "Sawing". In SPARQL query don't use PREFIX ent: ..., instead write whole urls, like for instance <http://www.entity-with-random-id/is+part+of+%2F+describes>.  Note that there are no literals in the SPARQL repo, every value is an URI.
                                         Note that names such as machine_instance_id, machine_model_name, ... are placeholders and not actual values in the repository (e. g. DO NOT USE http://www.value/machine_model_name). Output only the sparql query, no comments. Make sure that the sparql query doesnt return too much, max 20 elements. Its OK to also return values that are related but not exactly what is being asked, for better understanding, e. g. when searching for machine instance names, it also makes sense to search for their model names. Make sure that the (subject, predicate, object) order is as specified!!! Note that it's freq:is+instance+of (expands to http://www.frequent-predicate/is+instance+of)
                                         Write sparql query that helps answer: {input_string}.""")])
-    sparql_response = None
+    sparql_response = None  
     def get_sparql_info(**kwargs):
         nonlocal sparql_response
         print("JOOOOOOOOOo", sparql_response_coroutine, sparql_response)
@@ -54,7 +54,7 @@ def get_query_engine(graph_store, llmModel="gpt-4-0125-preview", useQueryGenerat
             "\n"
             "Additionally, the following sparql query was generated (using your help) and run:"
             "\n---------------------\n"
-            f"{sparql_response}"
+            f"{sparql_query}"
             "\n---------------------\n"
             "the response of the query is: "
             "\n---------------------\n"

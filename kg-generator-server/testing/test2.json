@@ -1,0 +1,502 @@
+[
+  {
+    "num": 1,
+    "query": "Get number of available SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 25 available instances of the SolarSprint 2000 machine. This number specifies the count of SolarSprint 2000 machines that are currently available for use."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available GreenHarmony EcoPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, there is 1 available GreenHarmony EcoPro machine instance, specifically named \"Machine #10\"."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, there are 16 available instances of the SwiftSaw Precision machine."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available MegaCut TurboMax machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, there are 23 available instances of the MegaCut TurboMax machine."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "There are at least 20 instances of the SolarBlade 4000 machine available for use. This number represents the specific model named SolarBlade 4000, and it's important to note that the actual number could potentially be higher, as the response was limited to showing only up to 20 instances."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided context information, there is no direct data about the number of available QuantumPro X1 machine instances. The information given primarily describes the features and specifications of the QuantumPro X1, such as its precision drilling capabilities, manufacturer details, and energy consumption, but does not specify inventory or the number of units available. Therefore, without additional data regarding inventory levels or stock quantities, it's not possible to specify the number of available QuantumPro X1 machines."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "There are 15 available instances of the CircuMax Pro-3000 machine."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available EcoSaw Pro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, there is no direct data regarding the number of available EcoSaw Pro machine instances. The information given focuses on the description, manufacturer, and specific properties (such as energy consumption and sawing capability) of the EcoSaw Pro machine, rather than inventory or quantity details. Therefore, I cannot specify the number of EcoSaw Pro machines available for each type as that information is not provided in the context."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available EcoSaw Pro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 19 available instances of the EcoSaw Pro machine."
+  },
+  {
+    "num": 1,
+    "query": "Get number of available SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are at least 20 available instances of the SolarBlade 4000 machine. This number represents the instances that are currently available for use."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available EcoSaw Pro, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 19 instances of the EcoSaw Pro and 17 instances of the TitanCraft Pro-1 available for use."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available MegaCut TurboMax, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 23 instances of the MegaCut TurboMax machine available and 20 instances of the SolarBlade 4000 machine available. These numbers represent the specific machine types that are currently available for use."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available SolarSphere 3000, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are currently 13 instances of the SolarSphere 3000 and 20 instances of the SolarBlade 4000 available for use. These numbers specify the quantity of each machine type that is ready and accessible for tasks."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available EcoDrive Elite, MegaSaw Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 22 instances of the EcoDrive Elite and 14 instances of the MegaSaw Turbo available."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available EcoDrive Elite, SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 22 instances of the EcoDrive Elite machine available and 25 instances of the SolarSprint 2000 machine available."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available SolarSprint 2000, SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 25 available instances of the SolarSprint 2000 machine and 16 available instances of the SwiftSaw Precision machine."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available PrecisionBlade X4, SwiftCut Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 22 available instances of the PrecisionBlade X4 and 21 available instances of the SwiftCut Precision machine. These numbers specify the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available CircuMax Pro-3000, GreenHarmony EcoPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 15 instances of the CircuMax Pro-3000 machine available for use. Additionally, there are 21 instances of the GreenHarmony EcoPro machine available. These numbers specify the availability of each machine type separately."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available SolarSprint 2000, MegaSaw Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 25 instances of the SolarSprint 2000 and 14 instances of the MegaSaw Turbo machine available for use."
+  },
+  {
+    "num": 2,
+    "query": "Get number of available SwiftCut Precision, QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 21 instances of the SwiftCut Precision machine and 30 instances of the QuantumPro X1 machine available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available TitanCraft Pro-1, MegaCut TurboMax, GreenHarmony EcoPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- TitanCraft Pro-1: 17 available instances\n- MegaCut TurboMax: 23 available instances\n- GreenHarmony EcoPro: 21 available instances\n\nThese figures represent the current availability of each machine type for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available TitanSaw Master-2, TitanCraft Pro-1, MegaSaw Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- TitanSaw Master-2: 24 available instances\n- TitanCraft Pro-1: 17 available instances\n- MegaSaw Turbo: 14 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available GreenHarmony EcoPro, MegaForce Turbo, SolarSphere 3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, the number of available machine instances for each specified machine type is as follows:\n\n- GreenHarmony EcoPro: 21 instances\n- MegaForce Turbo: 17 instances\n- SolarSphere 3000: 13 instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available MegaSaw Turbo, TitanCraft Pro-1, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, the number of available machine instances for each specified machine type is as follows:\n\n- MegaSaw Turbo: 14 available instances\n- TitanCraft Pro-1: 17 available instances\n- TitanCut CircleMaster: 22 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available SolarSphere 3000, GreenCut HarmonyPro, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SolarSphere 3000: 13 instances\n- GreenCut HarmonyPro: 17 instances\n- TitanCraft Pro-1: 17 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available MegaCut TurboMax, SwiftCut Precision, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 23 instances of the MegaCut TurboMax, 21 instances of the SwiftCut Precision, and 22 instances of the TitanCut CircleMaster available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available PrecisionBlade X4, EcoDrive Elite, SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, there are 22 instances of the PrecisionBlade X4 available, 22 instances of the EcoDrive Elite, and 25 instances of the SolarSprint 2000 available for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available SolarSprint 2000, EcoDrive Elite, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, the number of available machine instances for each specified machine type is as follows:\n\n- SolarSprint 2000: 25 instances\n- EcoDrive Elite: 22 instances\n- TitanCut CircleMaster: 22 instances\n\nThese numbers represent the available instances that are ready for use for each of the mentioned machine types."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available SolarSprint 2000, SwiftDrill Precision, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, the number of available machine instances for each specified machine type is as follows:\n\n- SolarSprint 2000: 25 available instances\n- SwiftDrill Precision: 23 available instances\n- TitanCut CircleMaster: 22 available instances\n\nThese numbers represent the current availability of each machine type for use."
+  },
+  {
+    "num": 3,
+    "query": "Get number of available EcoRound Precision, TitanCraft Pro-1, EcoBlade Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, the number of available machine instances for each specified machine type is as follows:\n\n- EcoRound Precision: 23 available instances\n- TitanCraft Pro-1: 17 available instances\n- EcoBlade Elite: 14 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available PrecisionBlade X4, SwiftSaw Precision, MegaSaw Turbo, EcoBlade Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- PrecisionBlade X4: 22 available instances\n- SwiftSaw Precision: 16 available instances\n- MegaSaw Turbo: 14 available instances\n- EcoBlade Elite: 14 available instances\n\nThese numbers reflect the instances that are currently available for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available SolarBlade 4000, TitanBlade Max-3, TitanSaw Master-2, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SolarBlade 4000: 20 available instances\n- TitanBlade Max-3: 19 available instances\n- TitanSaw Master-2: 24 available instances\n- CircuMax Pro-3000: 15 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available MegaRound Turbo, GreenCut HarmonyPro, TitanSaw Master-2, QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machines for each specified type:\n\n- MegaRound Turbo: 12 available instances\n- GreenCut HarmonyPro: 17 available instances\n- TitanSaw Master-2: 24 available instances\n- QuantumPro X1: 30 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available EcoSaw Pro, SolarBlade 4000, MegaCut TurboMax, EcoDrive Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- EcoSaw Pro: 19 available instances\n- SolarBlade 4000: 20 available instances\n- MegaCut TurboMax: 23 available instances\n- EcoDrive Elite: 22 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available MegaSaw Turbo, MegaCut TurboMax, GreenHarmony EcoPro, SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machines for each specified type:\n\n- MegaSaw Turbo: 14 available instances\n- MegaCut TurboMax: 23 available instances\n- GreenHarmony EcoPro: 21 available instances\n- SwiftSaw Precision: 16 available instances\n\nThese numbers represent the quantity of each machine type that is currently available."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available CirclerPro X2, TitanCut CircleMaster, EcoSaw Pro, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- CirclerPro X2: 28 available instances\n- TitanCut CircleMaster: 22 available instances\n- EcoSaw Pro: 19 available instances\n- CircuMax Pro-3000: 15 available instances\n\nThese figures represent the current availability of each machine type."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available SolarSprint 2000, SwiftCircle Elite, TitanBlade Max-3, MegaRound Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SolarSprint 2000: 25 instances\n- SwiftCircle Elite: 19 instances\n- TitanBlade Max-3: 19 instances\n- MegaRound Turbo: 12 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available SwiftCut Precision, SolarBlade 4000, EcoRound Precision, TitanBlade Max-3 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftCut Precision: 21 instances\n- SolarBlade 4000: 20 instances\n- EcoRound Precision: 23 instances\n- TitanBlade Max-3: 19 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available QuantumPro X1, SolarBlade 4000, TitanSaw Master-2, SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- QuantumPro X1: 30 available instances\n- SolarBlade 4000: 20 available instances\n- TitanSaw Master-2: 24 available instances\n- SwiftSaw Precision: 16 available instances\n\nThese figures represent the current availability of each machine type."
+  },
+  {
+    "num": 4,
+    "query": "Get number of available EcoSaw Pro, EcoDrive Elite, GreenCirc HarmonyPro, SolarSphere 3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- EcoSaw Pro: 19 instances\n- EcoDrive Elite: 22 instances\n- GreenCirc HarmonyPro: 22 instances\n- SolarSphere 3000: 13 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available TitanBlade Max-3, GreenHarmony EcoPro, TitanCut CircleMaster, SwiftDrill Precision, SolarSphere 3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- TitanBlade Max-3: 19 available instances\n- GreenHarmony EcoPro: 21 available instances\n- TitanCut CircleMaster: 22 available instances\n- SwiftDrill Precision: 23 available instances\n- SolarSphere 3000: 13 available instances\n\nThese numbers reflect the current availability of each machine type."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available GreenCut HarmonyPro, GreenHarmony EcoPro, MegaRound Turbo, MegaForce Turbo, EcoDrive Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenCut HarmonyPro: 17 instances\n- GreenHarmony EcoPro: 21 instances\n- MegaRound Turbo: 12 instances\n- MegaForce Turbo: 17 instances\n- EcoDrive Elite: 22 instances\n\nThese numbers represent the count of each machine type that is currently available for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available SwiftCircle Elite, TitanCut CircleMaster, MegaRound Turbo, GreenHarmony EcoPro, MegaSaw Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftCircle Elite: 19 available instances\n- TitanCut CircleMaster: 22 available instances\n- MegaRound Turbo: 12 available instances\n- GreenHarmony EcoPro: 21 available instances\n- MegaSaw Turbo: 14 available instances\n\nThese numbers represent the count of each machine type that is currently available for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available GreenCirc HarmonyPro, SwiftCut Precision, EcoSaw Pro, TitanSaw Master-2, TitanBlade Max-3 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenCirc HarmonyPro: 22 available instances\n- SwiftCut Precision: 21 available instances\n- EcoSaw Pro: 19 available instances\n- TitanSaw Master-2: 24 available instances\n- TitanBlade Max-3: 19 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available EcoRound Precision, SolarSphere 3000, CirclerPro X2, MegaRound Turbo, MegaSaw Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- EcoRound Precision: 23 available instances\n- SolarSphere 3000: 13 available instances\n- CirclerPro X2: 28 available instances\n- MegaRound Turbo: 12 available instances\n- MegaSaw Turbo: 14 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available TitanSaw Master-2, MegaForce Turbo, SolarBlade 4000, GreenCirc HarmonyPro, SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- TitanSaw Master-2: 24 instances\n- MegaForce Turbo: 17 instances\n- SolarBlade 4000: 20 instances\n- GreenCirc HarmonyPro: 22 instances\n- SwiftSaw Precision: 16 instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available MegaSaw Turbo, EcoSaw Pro, SwiftCut Precision, MegaRound Turbo, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- MegaSaw Turbo: 14 instances\n- EcoSaw Pro: 19 instances\n- SwiftCut Precision: 21 instances\n- MegaRound Turbo: 12 instances\n- CircuMax Pro-3000: 15 instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available SwiftCircle Elite, EcoBlade Elite, SwiftDrill Precision, GreenCut HarmonyPro, GreenHarmony EcoPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- EcoBlade Elite: 14 available instances\n- GreenCut HarmonyPro: 17 available instances\n- GreenHarmony EcoPro: 21 available instances\n- SwiftCircle Elite: 19 available instances\n- SwiftDrill Precision: 23 available instances\n\nThese numbers reflect the current availability of each machine type."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available GreenHarmony EcoPro, MegaRound Turbo, MegaSaw Turbo, TitanBlade Max-3, SwiftCircle Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenHarmony EcoPro: 21 available instances\n- MegaRound Turbo: 12 available instances\n- MegaSaw Turbo: 14 available instances\n- TitanBlade Max-3: 19 available instances\n- SwiftCircle Elite: 19 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 5,
+    "query": "Get number of available SolarSphere 3000, TitanCraft Pro-1, MegaForce Turbo, GreenCirc HarmonyPro, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SolarSphere 3000: 13 instances\n- TitanCraft Pro-1: 17 instances\n- MegaForce Turbo: 17 instances\n- GreenCirc HarmonyPro: 22 instances\n- SolarBlade 4000: 20 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available PrecisionBlade X4, EcoBlade Elite, QuantumPro X1, MegaSaw Turbo, MegaForce Turbo, SolarSphere 3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- PrecisionBlade X4: 22 instances\n- EcoBlade Elite: 14 instances\n- QuantumPro X1: 30 instances\n- MegaSaw Turbo: 14 instances\n- MegaForce Turbo: 17 instances\n- SolarSphere 3000: 13 instances\n\nThese numbers reflect the available instances that are ready for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available MegaSaw Turbo, MegaRound Turbo, TitanSaw Master-2, SwiftSaw Precision, PrecisionBlade X4, EcoBlade Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- MegaSaw Turbo: 14 available instances\n- MegaRound Turbo: 12 available instances\n- TitanSaw Master-2: 24 available instances\n- SwiftSaw Precision: 16 available instances\n- PrecisionBlade X4: 22 available instances\n- EcoBlade Elite: 14 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available EcoDrive Elite, MegaForce Turbo, CircuMax Pro-3000, EcoRound Precision, SolarSprint 2000, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- EcoDrive Elite: 22 available instances\n- MegaForce Turbo: 17 available instances\n- CircuMax Pro-3000: 15 available instances\n- EcoRound Precision: 23 available instances\n- SolarSprint 2000: 25 available instances\n- TitanCut CircleMaster: 22 available instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available CircuMax Pro-3000, MegaCut TurboMax, GreenHarmony EcoPro, TitanSaw Master-2, EcoBlade Elite, MegaForce Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- CircuMax Pro-3000: 15 instances\n- MegaCut TurboMax: 23 instances\n- GreenHarmony EcoPro: 21 instances\n- TitanSaw Master-2: 24 instances\n- EcoBlade Elite: 14 instances\n- MegaForce Turbo: 17 instances\n\nThese numbers represent the available instances that are ready for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available TitanSaw Master-2, GreenHarmony EcoPro, EcoRound Precision, SwiftDrill Precision, SwiftCut Precision, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- TitanSaw Master-2: 24 instances\n- GreenHarmony EcoPro: 21 instances\n- EcoRound Precision: 23 instances\n- SwiftDrill Precision: 23 instances\n- SwiftCut Precision: 21 instances\n- SolarBlade 4000: 20 instances\n\nThese numbers represent the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available SwiftSaw Precision, SwiftCut Precision, QuantumPro X1, TitanSaw Master-2, GreenHarmony EcoPro, SwiftDrill Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftSaw Precision: 16 instances\n- SwiftCut Precision: 21 instances\n- QuantumPro X1: 30 instances\n- TitanSaw Master-2: 24 instances\n- GreenHarmony EcoPro: 21 instances\n- SwiftDrill Precision: 23 instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available PrecisionBlade X4, SolarSphere 3000, TitanCraft Pro-1, CirclerPro X2, TitanBlade Max-3, SwiftCut Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- PrecisionBlade X4: 22 available instances\n- SolarSphere 3000: 13 available instances\n- TitanCraft Pro-1: 17 available instances\n- CirclerPro X2: 28 available instances\n- TitanBlade Max-3: 19 available instances\n- SwiftCut Precision: 21 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available SolarBlade 4000, EcoBlade Elite, PrecisionBlade X4, CircuMax Pro-3000, MegaSaw Turbo, EcoRound Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n- SolarBlade 4000: 20 instances\n- EcoBlade Elite: 14 instances\n- PrecisionBlade X4: 22 instances\n- CircuMax Pro-3000: 15 instances\n- MegaSaw Turbo: 14 instances\n- EcoRound Precision: 23 instances\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available QuantumPro X1, GreenHarmony EcoPro, SolarSphere 3000, EcoSaw Pro, MegaCut TurboMax, GreenCut HarmonyPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- QuantumPro X1: 30 available instances\n- GreenHarmony EcoPro: 21 available instances\n- SolarSphere 3000: 13 available instances\n- EcoSaw Pro: 19 available instances\n- MegaCut TurboMax: 23 available instances\n- GreenCut HarmonyPro: 17 available instances\n\nThese numbers reflect the current availability of each machine type."
+  },
+  {
+    "num": 6,
+    "query": "Get number of available EcoRound Precision, SwiftDrill Precision, GreenHarmony EcoPro, EcoBlade Elite, EcoSaw Pro, CirclerPro X2 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n- CirclerPro X2: 28 available instances\n- EcoBlade Elite: 14 available instances\n- EcoRound Precision: 23 available instances\n- EcoSaw Pro: 19 available instances\n- GreenHarmony EcoPro: 21 available instances\n- SwiftDrill Precision: 23 available instances\n\nThese numbers represent the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available SwiftSaw Precision, MegaCut TurboMax, MegaSaw Turbo, EcoDrive Elite, QuantumPro X1, SolarSphere 3000, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftSaw Precision: 16 available instances\n- MegaCut TurboMax: 23 available instances\n- MegaSaw Turbo: 14 available instances\n- EcoDrive Elite: 22 available instances\n- QuantumPro X1: 30 available instances\n- SolarSphere 3000: 13 available instances\n- SolarBlade 4000: 20 available instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available QuantumPro X1, GreenCut HarmonyPro, EcoRound Precision, SwiftCut Precision, TitanBlade Max-3, MegaSaw Turbo, SwiftDrill Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- QuantumPro X1: 30 instances\n- GreenCut HarmonyPro: 17 instances\n- EcoRound Precision: 23 instances\n- SwiftCut Precision: 21 instances\n- TitanBlade Max-3: 19 instances\n- MegaSaw Turbo: 14 instances\n- SwiftDrill Precision: 23 instances\n\nThese numbers represent the quantity of each machine type that is available for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available GreenCut HarmonyPro, SwiftCut Precision, SolarBlade 4000, PrecisionBlade X4, MegaCut TurboMax, QuantumPro X1, MegaRound Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- GreenCut HarmonyPro: 17 instances\n- SwiftCut Precision: 21 instances\n- SolarBlade 4000: 20 instances\n- PrecisionBlade X4: 22 instances\n- MegaCut TurboMax: 23 instances\n- QuantumPro X1: 30 instances\n- MegaRound Turbo: 12 instances\n\nThese numbers represent the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available CirclerPro X2, TitanSaw Master-2, SwiftSaw Precision, EcoBlade Elite, MegaRound Turbo, GreenCirc HarmonyPro, GreenCut HarmonyPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, there is no direct data indicating the number of available instances for each machine type. The descriptions and details provided focus on the characteristics, capabilities, and specifications of the machines such as the TitanSaw Master-2, CirclerPro X2, SwiftSaw Precision, EcoBlade Elite, MegaRound Turbo, GreenCirc HarmonyPro, and GreenCut HarmonyPro, but do not include inventory or quantity information. Therefore, it's not possible to specify the number of available machine instances for each type from the given data."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available SwiftSaw Precision, SwiftCut Precision, SolarSprint 2000, TitanCut CircleMaster, MegaRound Turbo, MegaSaw Turbo, EcoRound Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- SwiftSaw Precision: 16 available instances\n- SwiftCut Precision: 21 available instances\n- SolarSprint 2000: 25 available instances\n- TitanCut CircleMaster: 22 available instances\n- MegaRound Turbo: 12 available instances\n- MegaSaw Turbo: 14 available instances\n- EcoRound Precision: 23 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available GreenHarmony EcoPro, SwiftCircle Elite, SwiftDrill Precision, SolarSprint 2000, SwiftSaw Precision, MegaCut TurboMax, EcoDrive Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- GreenHarmony EcoPro: 1\n- SwiftCircle Elite: 1\n- SwiftDrill Precision: 1\n- SolarSprint 2000: 1\n- SwiftSaw Precision: 1\n- MegaCut TurboMax: 1\n- EcoDrive Elite: 1\n\nEach of these machine types is mentioned once in the provided context, indicating there is one instance of each machine type available."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available EcoBlade Elite, TitanCut CircleMaster, MegaRound Turbo, SwiftSaw Precision, SolarBlade 4000, QuantumPro X1, TitanBlade Max-3 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- EcoBlade Elite: 14 available instances\n- TitanCut CircleMaster: 22 available instances\n- MegaRound Turbo: 12 available instances\n- SwiftSaw Precision: 16 available instances\n- SolarBlade 4000: 20 available instances\n- QuantumPro X1: 30 available instances\n- TitanBlade Max-3: 19 available instances\n\nThese numbers reflect the availability of each machine type for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available QuantumPro X1, SwiftDrill Precision, SwiftCut Precision, MegaSaw Turbo, GreenCirc HarmonyPro, EcoRound Precision, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- QuantumPro X1: 30 available instances\n- SwiftDrill Precision: 23 available instances\n- SwiftCut Precision: 21 available instances\n- MegaSaw Turbo: 14 available instances\n- GreenCirc HarmonyPro: 22 available instances\n- EcoRound Precision: 23 available instances\n- TitanCraft Pro-1: 17 available instances\n\nThese numbers represent the current availability of each machine type."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available MegaSaw Turbo, SwiftCircle Elite, SolarSprint 2000, TitanSaw Master-2, MegaRound Turbo, SolarSphere 3000, TitanBlade Max-3 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- MegaSaw Turbo: 14 available instances\n- SwiftCircle Elite: 19 available instances\n- SolarSprint 2000: 25 available instances\n- TitanSaw Master-2: 24 available instances\n- MegaRound Turbo: 12 available instances\n- SolarSphere 3000: 13 available instances\n- TitanBlade Max-3: 19 available instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 7,
+    "query": "Get number of available EcoDrive Elite, SolarSphere 3000, TitanBlade Max-3, EcoBlade Elite, SwiftCut Precision, PrecisionBlade X4, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- EcoDrive Elite: 22 instances\n- SolarSphere 3000: 13 instances\n- TitanBlade Max-3: 19 instances\n- EcoBlade Elite: 14 instances\n- SwiftCut Precision: 21 instances\n- PrecisionBlade X4: 22 instances\n- CircuMax Pro-3000: 15 instances\n\nThese numbers reflect the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available GreenHarmony EcoPro, QuantumPro X1, MegaForce Turbo, MegaRound Turbo, SolarBlade 4000, EcoBlade Elite, TitanCraft Pro-1, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenHarmony EcoPro: 21 available instances\n- QuantumPro X1: 30 available instances\n- MegaForce Turbo: 17 available instances\n- MegaRound Turbo: 12 available instances\n- SolarBlade 4000: 20 available instances\n- EcoBlade Elite: 14 available instances\n- TitanCraft Pro-1: 17 available instances\n- CircuMax Pro-3000: 15 available instances\n\nThese numbers reflect the current availability of each machine type for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available SwiftCircle Elite, TitanSaw Master-2, EcoBlade Elite, SwiftDrill Precision, MegaSaw Turbo, SolarBlade 4000, SolarSphere 3000, SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, the number of available machine instances for each specified machine type is as follows:\n\n- SwiftCircle Elite: This machine type is not mentioned in the provided information, so its availability cannot be determined.\n- TitanSaw Master-2: 1 instance available.\n- EcoBlade Elite: 1 instance available.\n- SwiftDrill Precision: 1 instance available.\n- MegaSaw Turbo: 1 instance available.\n- SolarBlade 4000: 1 instance available.\n- SolarSphere 3000: This machine type is mentioned, but there is no detailed information provided about its instances or properties, so its availability cannot be determined.\n- SolarSprint 2000: 1 instance available.\n\nEach mentioned machine type, except for SwiftCircle Elite and SolarSphere 3000, has one instance available according to the provided context information."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available SwiftDrill Precision, EcoBlade Elite, SolarBlade 4000, EcoSaw Pro, MegaRound Turbo, CircuMax Pro-3000, TitanSaw Master-2, SolarSphere 3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the available information, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftDrill Precision: 23 instances\n- EcoBlade Elite: 14 instances\n- SolarBlade 4000: 20 instances\n- EcoSaw Pro: 19 instances\n- MegaRound Turbo: 12 instances\n- CircuMax Pro-3000: 15 instances\n- TitanSaw Master-2: 24 instances\n- SolarSphere 3000: 13 instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available MegaForce Turbo, SwiftDrill Precision, SolarBlade 4000, EcoRound Precision, MegaCut TurboMax, TitanCraft Pro-1, TitanBlade Max-3, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the available instances for each machine type:\n\n- MegaForce Turbo: 17 available instances\n- SwiftDrill Precision: 23 available instances\n- SolarBlade 4000: 20 available instances\n- EcoRound Precision: 23 available instances\n- MegaCut TurboMax: 23 available instances\n- TitanCraft Pro-1: 17 available instances\n- TitanBlade Max-3: 19 available instances\n- CircuMax Pro-3000: 15 available instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available GreenHarmony EcoPro, QuantumPro X1, TitanSaw Master-2, TitanBlade Max-3, GreenCirc HarmonyPro, GreenCut HarmonyPro, SwiftDrill Precision, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, the number of available machine instances for each specified machine type is as follows:\n\n- GreenHarmony EcoPro: 1\n- QuantumPro X1: 1\n- TitanSaw Master-2: 1\n- TitanBlade Max-3: 1\n- GreenCirc HarmonyPro: 1\n\nThe machine types GreenCut HarmonyPro, SwiftDrill Precision, and TitanCraft Pro-1 were not mentioned in the provided information, so it can be inferred that there are no available instances for these machine types in the given dataset."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available MegaSaw Turbo, SolarSphere 3000, MegaCut TurboMax, EcoBlade Elite, CircuMax Pro-3000, CirclerPro X2, SwiftCircle Elite, SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- MegaSaw Turbo: 1 instance\n- SolarSphere 3000: 1 instance\n- MegaCut TurboMax: 1 instance\n- EcoBlade Elite: 1 instance\n- CircuMax Pro-3000: 1 instance\n- CirclerPro X2: 1 instance\n- SwiftCircle Elite: 1 instance\n- SolarSprint 2000: 1 instance\n\nEach of these machine types is mentioned once in the provided context, indicating a single instance of each."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available EcoBlade Elite, SwiftCircle Elite, PrecisionBlade X4, EcoRound Precision, EcoSaw Pro, CirclerPro X2, GreenHarmony EcoPro, MegaForce Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- EcoBlade Elite: 1\n- SwiftCircle Elite: 0 (There is no information provided about a machine called SwiftCircle Elite.)\n- PrecisionBlade X4: 1\n- EcoRound Precision: 0 (There is no information provided about a machine called EcoRound Precision.)\n- EcoSaw Pro: 1\n- CirclerPro X2: 1\n- GreenHarmony EcoPro: 1\n- MegaForce Turbo: 1\n\nEach of these machine types is mentioned once in the provided context, indicating a single instance of each available, except for SwiftCircle Elite and EcoRound Precision, which are not mentioned at all."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available GreenCut HarmonyPro, TitanCraft Pro-1, MegaRound Turbo, MegaForce Turbo, EcoBlade Elite, SolarBlade 4000, SwiftCircle Elite, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenCut HarmonyPro: 17 instances\n- TitanCraft Pro-1: 17 instances\n- MegaRound Turbo: 12 instances\n- MegaForce Turbo: 17 instances\n- EcoBlade Elite: 14 instances\n- SolarBlade 4000: 20 instances\n- SwiftCircle Elite: 19 instances\n- TitanCut CircleMaster: 22 instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available TitanCraft Pro-1, GreenCirc HarmonyPro, TitanSaw Master-2, EcoSaw Pro, QuantumPro X1, PrecisionBlade X4, MegaForce Turbo, SwiftCut Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- TitanCraft Pro-1: 17 instances\n- GreenCirc HarmonyPro: 22 instances\n- TitanSaw Master-2: 24 instances\n- EcoSaw Pro: 19 instances\n- QuantumPro X1: 30 instances\n- PrecisionBlade X4: 22 instances\n- MegaForce Turbo: 17 instances\n- SwiftCut Precision: 21 instances\n\nThese numbers represent the quantity of each machine type that is available for use."
+  },
+  {
+    "num": 8,
+    "query": "Get number of available EcoDrive Elite, EcoBlade Elite, SwiftSaw Precision, TitanCraft Pro-1, GreenCirc HarmonyPro, MegaRound Turbo, GreenCut HarmonyPro, EcoRound Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the available instances for each specified machine type:\n\n- EcoDrive Elite: 22 available instances\n- EcoBlade Elite: 14 available instances\n- SwiftSaw Precision: 16 available instances\n- TitanCraft Pro-1: 17 available instances\n- GreenCirc HarmonyPro: 22 available instances\n- MegaRound Turbo: 12 available instances\n- GreenCut HarmonyPro: 17 available instances\n- EcoRound Precision: 23 available instances\n\nThese numbers represent the count of available instances for each machine type as per the latest query response."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available TitanBlade Max-3, PrecisionBlade X4, TitanSaw Master-2, TitanCut CircleMaster, GreenCut HarmonyPro, SwiftCircle Elite, GreenCirc HarmonyPro, EcoRound Precision, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- TitanBlade Max-3: 1\n- PrecisionBlade X4: 1\n- TitanSaw Master-2: 1\n- TitanCut CircleMaster: 1\n- GreenCut HarmonyPro: 1\n- GreenCirc HarmonyPro: 1\n- TitanCraft Pro-1: 1\n\nThe machine types SwiftCircle Elite and EcoRound Precision were not mentioned in the provided information, so their numbers are not available."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available MegaForce Turbo, SwiftCircle Elite, MegaSaw Turbo, SwiftDrill Precision, GreenCirc HarmonyPro, TitanCut CircleMaster, TitanSaw Master-2, PrecisionBlade X4, QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- MegaForce Turbo: 1 instance\n- SwiftDrill Precision: 1 instance\n- MegaSaw Turbo: 1 instance\n- GreenCirc HarmonyPro: 1 instance\n- TitanCut CircleMaster: 1 instance\n- TitanSaw Master-2: 1 instance\n- PrecisionBlade X4: 1 instance\n- QuantumPro X1: 1 instance\n\nSwiftCircle Elite was not mentioned in the provided information, so it appears there are no instances available or it was not listed among the assets described."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available SwiftSaw Precision, MegaForce Turbo, TitanBlade Max-3, SolarSphere 3000, GreenCirc HarmonyPro, GreenCut HarmonyPro, GreenHarmony EcoPro, EcoBlade Elite, QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftSaw Precision: 1\n- MegaForce Turbo: 1\n- TitanBlade Max-3: 1\n- SolarSphere 3000: 0 (There is no detailed information provided about the SolarSphere 3000, such as description or properties that would indicate its existence as an asset.)\n- GreenCirc HarmonyPro: 1\n- GreenCut HarmonyPro: 1\n- GreenHarmony EcoPro: 1\n- EcoBlade Elite: 1\n- QuantumPro X1: 0 (There is no information provided about a machine named QuantumPro X1, indicating its existence or properties.)\n\nEach named machine type is mentioned once in the provided context, indicating a single instance of each, except for SolarSphere 3000 and QuantumPro X1, for which there is either no information provided or they do not exist in the given context."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available CirclerPro X2, TitanCut CircleMaster, MegaForce Turbo, CircuMax Pro-3000, SolarBlade 4000, MegaRound Turbo, GreenCut HarmonyPro, EcoDrive Elite, EcoRound Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- CirclerPro X2: 28 instances\n- TitanCut CircleMaster: 22 instances\n- MegaForce Turbo: 17 instances\n- CircuMax Pro-3000: 15 instances\n- SolarBlade 4000: 20 instances\n- MegaRound Turbo: 12 instances\n- GreenCut HarmonyPro: 17 instances\n- EcoDrive Elite: 22 instances\n- EcoRound Precision: 23 instances\n\nThese numbers represent the quantity of each machine type that is currently available for use."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available SwiftDrill Precision, SolarSprint 2000, GreenCut HarmonyPro, MegaForce Turbo, CirclerPro X2, EcoBlade Elite, CircuMax Pro-3000, EcoDrive Elite, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftDrill Precision: 1\n- SolarSprint 2000: 1\n- GreenCut HarmonyPro: 1\n- MegaForce Turbo: 1\n- CirclerPro X2: 1\n- EcoBlade Elite: 1\n- CircuMax Pro-3000: 1\n- EcoDrive Elite: 1\n- TitanCut CircleMaster: 1\n\nEach of these machine types is mentioned once in the provided context, indicating there is one instance of each machine type available."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available EcoSaw Pro, QuantumPro X1, SwiftCut Precision, MegaSaw Turbo, CirclerPro X2, EcoRound Precision, GreenCut HarmonyPro, MegaForce Turbo, EcoDrive Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- EcoSaw Pro: 1 instance\n- QuantumPro X1: 1 instance\n- SwiftCut Precision: 0 instances (This machine type is not mentioned in the provided information.)\n- MegaSaw Turbo: 1 instance\n- CirclerPro X2: 1 instance\n- EcoRound Precision: 1 instance\n- GreenCut HarmonyPro: 1 instance\n- MegaForce Turbo: 1 instance\n- EcoDrive Elite: 0 instances (This machine type is not mentioned in the provided information.)\n\nEach mentioned machine type corresponds to a unique asset, and the count reflects the number of instances described in the provided context."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available GreenCut HarmonyPro, EcoBlade Elite, SolarSprint 2000, TitanCraft Pro-1, MegaSaw Turbo, QuantumPro X1, GreenCirc HarmonyPro, TitanBlade Max-3, EcoDrive Elite machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- GreenCut HarmonyPro: 1\n- EcoBlade Elite: 1\n- SolarSprint 2000: 1\n- TitanCraft Pro-1: 1\n- MegaSaw Turbo: 1\n- QuantumPro X1: 1\n- GreenCirc HarmonyPro: 1\n- TitanBlade Max-3: 1\n\nEach of these machine types is mentioned once in the provided context, indicating a single instance of each."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available PrecisionBlade X4, MegaCut TurboMax, SolarBlade 4000, CirclerPro X2, SwiftDrill Precision, EcoSaw Pro, SolarSprint 2000, GreenCut HarmonyPro, GreenCirc HarmonyPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- PrecisionBlade X4: 1\n- MegaCut TurboMax: 1\n- SolarBlade 4000: 1\n- CirclerPro X2: 1\n- SwiftDrill Precision: 1\n- EcoSaw Pro: 1\n- SolarSprint 2000: 1\n- GreenCut HarmonyPro: 1\n- GreenCirc HarmonyPro: 1\n\nEach of these machine types is mentioned once in the provided context, indicating there is one instance of each machine type available."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available MegaForce Turbo, TitanBlade Max-3, SwiftSaw Precision, SwiftDrill Precision, CirclerPro X2, GreenHarmony EcoPro, MegaRound Turbo, SolarBlade 4000, SolarSprint 2000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers for each specified machine type:\n\n- MegaForce Turbo: 1 instance\n- TitanBlade Max-3: 1 instance\n- SwiftSaw Precision: 1 instance\n- SwiftDrill Precision: 1 instance\n- CirclerPro X2: 1 instance\n- GreenHarmony EcoPro: 1 instance\n- MegaRound Turbo: 1 instance\n- SolarBlade 4000: 1 instance\n- SolarSprint 2000: 1 instance\n\nEach of these machine types is mentioned once in the provided context, indicating a single instance of each."
+  },
+  {
+    "num": 9,
+    "query": "Get number of available GreenHarmony EcoPro, SwiftSaw Precision, PrecisionBlade X4, GreenCirc HarmonyPro, EcoBlade Elite, SolarSphere 3000, SwiftCut Precision, SolarBlade 4000, QuantumPro X1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- GreenHarmony EcoPro: 1\n- SwiftSaw Precision: 1\n- PrecisionBlade X4: 1\n- GreenCirc HarmonyPro: 1\n- EcoBlade Elite: 1\n- SolarSphere 3000: 0 (No information provided)\n- SwiftCut Precision: 1\n- SolarBlade 4000: 0 (No information provided)\n- QuantumPro X1: 0 (No information provided)\n\nEach of these counts represents the number of instances mentioned or described in the provided context, with the exception of SolarSphere 3000, SolarBlade 4000, and QuantumPro X1, for which no information was provided."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available TitanCraft Pro-1, TitanCut CircleMaster, SolarSprint 2000, QuantumPro X1, SwiftCut Precision, GreenCut HarmonyPro, TitanBlade Max-3, SolarBlade 4000, MegaForce Turbo, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- TitanCraft Pro-1: 17 instances\n- TitanCut CircleMaster: 22 instances\n- SolarSprint 2000: 25 instances\n- QuantumPro X1: 30 instances\n- SwiftCut Precision: 21 instances\n- GreenCut HarmonyPro: 17 instances\n- TitanBlade Max-3: 19 instances\n- SolarBlade 4000: 20 instances\n- MegaForce Turbo: 17 instances\n- CircuMax Pro-3000: 15 instances\n\nThese numbers represent the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available SwiftDrill Precision, SolarBlade 4000, SwiftCircle Elite, EcoSaw Pro, MegaCut TurboMax, TitanCut CircleMaster, TitanCraft Pro-1, MegaRound Turbo, MegaForce Turbo, CircuMax Pro-3000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- SwiftDrill Precision: 1\n- SolarBlade 4000: 1\n- SwiftCircle Elite: 1\n- EcoSaw Pro: 1\n- MegaCut TurboMax: 1\n- TitanCut CircleMaster: 1\n- TitanCraft Pro-1: 1\n- MegaRound Turbo: 1\n- MegaForce Turbo: 1\n- CircuMax Pro-3000: 1\n\nEach of these machine types is mentioned once in the provided context, indicating there is one instance of each machine type available."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available TitanCut CircleMaster, TitanSaw Master-2, GreenCut HarmonyPro, SwiftDrill Precision, MegaForce Turbo, SolarSprint 2000, CirclerPro X2, TitanCraft Pro-1, TitanBlade Max-3, SolarBlade 4000 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- TitanCut CircleMaster: 1\n- TitanSaw Master-2: 1\n- GreenCut HarmonyPro: 1\n- SwiftDrill Precision: 1\n- MegaForce Turbo: 1\n- SolarSprint 2000: 1\n- CirclerPro X2: 1\n- TitanCraft Pro-1: 1\n- TitanBlade Max-3: 1\n- SolarBlade 4000: 1\n\nEach of these machine types is mentioned once in the provided context, indicating there is one instance of each machine available."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available GreenCut HarmonyPro, MegaRound Turbo, SolarSprint 2000, EcoDrive Elite, GreenCirc HarmonyPro, TitanCraft Pro-1, CirclerPro X2, EcoRound Precision, SwiftSaw Precision, SwiftCut Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available machine instances for each specified machine type:\n\n- GreenCut HarmonyPro: 17 instances\n- MegaRound Turbo: 12 instances\n- SolarSprint 2000: 25 instances\n- EcoDrive Elite: 22 instances\n- GreenCirc HarmonyPro: 22 instances\n- TitanCraft Pro-1: 17 instances\n- CirclerPro X2: 28 instances\n- EcoRound Precision: 23 instances\n- SwiftSaw Precision: 16 instances\n- SwiftCut Precision: 21 instances\n\nThese numbers represent the count of each machine type that is available for use."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available CircuMax Pro-3000, CirclerPro X2, MegaRound Turbo, EcoDrive Elite, EcoSaw Pro, MegaSaw Turbo, GreenCut HarmonyPro, EcoRound Precision, TitanCraft Pro-1, GreenHarmony EcoPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- CircuMax Pro-3000: 1 instance\n- CirclerPro X2: 1 instance\n- MegaRound Turbo: 1 instance\n- EcoDrive Elite: 1 instance\n- EcoSaw Pro: 1 instance\n- MegaSaw Turbo: 1 instance\n- GreenCut HarmonyPro: 1 instance\n- EcoRound Precision: 0 instances (This machine type is not mentioned in the provided information.)\n- TitanCraft Pro-1: 1 instance\n- GreenHarmony EcoPro: 0 instances (This machine type is not mentioned in the provided information.)\n\nEach mentioned machine type has exactly one instance available, except for EcoRound Precision and GreenHarmony EcoPro, which are not listed in the provided information and therefore have 0 instances available."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available MegaRound Turbo, TitanCut CircleMaster, SwiftCut Precision, EcoBlade Elite, EcoDrive Elite, EcoRound Precision, MegaCut TurboMax, EcoSaw Pro, GreenCirc HarmonyPro, SwiftSaw Precision machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the provided information, here are the numbers of available machine instances for each specified machine type:\n\n- MegaRound Turbo: 1\n- TitanCut CircleMaster: 1\n- SwiftCut Precision: 1\n- EcoBlade Elite: 1\n- EcoDrive Elite: 1\n- EcoRound Precision: 1\n- MegaCut TurboMax: 1\n- EcoSaw Pro: 1\n- GreenCirc HarmonyPro: 1\n- SwiftSaw Precision: 1\n\nEach of these machine types is mentioned once in the provided context, indicating a single instance of each machine type is available."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available PrecisionBlade X4, SwiftSaw Precision, QuantumPro X1, SolarSphere 3000, TitanCut CircleMaster, TitanCraft Pro-1, SwiftCut Precision, CircuMax Pro-3000, GreenCut HarmonyPro, GreenCirc HarmonyPro machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- PrecisionBlade X4: 22 available instances\n- SwiftSaw Precision: 16 available instances\n- QuantumPro X1: 30 available instances\n- SolarSphere 3000: 13 available instances\n- TitanCut CircleMaster: 22 available instances\n- TitanCraft Pro-1: 17 available instances\n- SwiftCut Precision: 21 available instances\n- CircuMax Pro-3000: 15 available instances\n- GreenCut HarmonyPro: 17 available instances\n- GreenCirc HarmonyPro: 22 available instances\n\nThese numbers reflect the availability of each machine type for use."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available PrecisionBlade X4, TitanBlade Max-3, EcoDrive Elite, SwiftDrill Precision, SwiftSaw Precision, EcoBlade Elite, EcoSaw Pro, SolarBlade 4000, TitanSaw Master-2, MegaRound Turbo machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- PrecisionBlade X4: 22 instances\n- TitanBlade Max-3: 19 instances\n- EcoDrive Elite: 22 instances\n- SwiftDrill Precision: 23 instances\n- SwiftSaw Precision: 16 instances\n- EcoBlade Elite: 14 instances\n- EcoSaw Pro: 19 instances\n- SolarBlade 4000: 20 instances\n- TitanSaw Master-2: 24 instances\n- MegaRound Turbo: 12 instances\n\nThese numbers reflect the available instances of each machine type that are ready for use."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available MegaRound Turbo, TitanBlade Max-3, EcoBlade Elite, TitanCut CircleMaster, PrecisionBlade X4, MegaCut TurboMax, EcoRound Precision, SwiftSaw Precision, QuantumPro X1, TitanCraft Pro-1 machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the available instances for each specified machine type:\n\n- **MegaRound Turbo**: 12 available instances\n- **TitanBlade Max-3**: 19 available instances\n- **EcoBlade Elite**: 14 available instances\n- **TitanCut CircleMaster**: 22 available instances\n- **PrecisionBlade X4**: 22 available instances\n- **MegaCut TurboMax**: 23 available instances\n- **EcoRound Precision**: 23 available instances\n- **SwiftSaw Precision**: 16 available instances\n- **QuantumPro X1**: 30 available instances\n- **TitanCraft Pro-1**: 17 available instances\n\nThese numbers reflect the availability of each machine type for use."
+  },
+  {
+    "num": 10,
+    "query": "Get number of available SwiftDrill Precision, SwiftCircle Elite, SolarSprint 2000, SwiftCut Precision, MegaForce Turbo, GreenHarmony EcoPro, CircuMax Pro-3000, EcoDrive Elite, GreenCirc HarmonyPro, TitanCut CircleMaster machine instances. Specify the number for each machine type separately.",
+    "query_answer": "Based on the information provided, here are the numbers of available instances for each specified machine type:\n\n- CircuMax Pro-3000: 15 available instances\n- EcoDrive Elite: 22 available instances\n- GreenCirc HarmonyPro: 22 available instances\n- GreenHarmony EcoPro: 21 available instances\n- MegaForce Turbo: 17 available instances\n- SolarSprint 2000: 25 available instances\n- SwiftCircle Elite: 19 available instances\n- SwiftCut Precision: 21 available instances\n- SwiftDrill Precision: 23 available instances\n- TitanCut CircleMaster: 22 available instances\n\nThese numbers reflect the available instances of each machine type that are ready for use."
+  }
+]

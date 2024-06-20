@@ -1,0 +1,200 @@
+[
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, there are no drilling machines listed that consume at most 0 volts. All the drilling machines mentioned have a specified electrical consumption that requires more than 0 volts to operate.",
+        "voltage": 0,
+        "question": "Return all drilling machines that consume at most 0 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, there are no drilling machines listed that consume at most 1 volt. All the drilling machines mentioned have a higher voltage consumption as part of their energy consumption characteristics.",
+        "voltage": 1,
+        "question": "Return all drilling machines that consume at most 1 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "The drilling machines that consume at most 2 volts and their consumption are:\n\n1. **SwiftDrill Precision** - It consumes 2 volts and 2 amperes of electricity. This compact and lightweight driller is designed for fine detailing and intricate work, appreciated by DIY hobbyists and artisans for its precise control and minimal vibration.\n\n2. **MegaForce Turbo** - It consumes 2 volts and 2 amperes of electricity. This high-performance driller is engineered for speed and power, featuring a turbocharged motor and advanced cooling system, making it the go-to choice for professionals seeking rapid results without compromising durability.",
+        "voltage": 2,
+        "question": "Return all drilling machines that consume at most 2 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "The drilling machines that consume at most 3 volts and their respective consumption are:\n\n1. **EcoDrive Elite** - It consumes 3 volts and 3 amperes.\n2. **SwiftDrill Precision** - It consumes 2 volts and 2 amperes.\n3. **MegaForce Turbo** - It consumes 9 volts and 2 amperes. (Note: This exceeds the voltage criteria but is included for completeness based on the available data structure. For strict adherence to the question, this entry should be disregarded.)\n4. **QuantumPro X1** - It consumes 3 volts and 3 amperes.\n5. **SolarSprint 2000** - It consumes 7 volts and 10 amperes. (Note: This exceeds the voltage criteria and should be disregarded based on the question's criteria.)\n\nFrom the list, only **EcoDrive Elite**, **SwiftDrill Precision**, and **QuantumPro X1** strictly meet the criteria of consuming at most 3 volts.",
+        "voltage": 3,
+        "question": "Return all drilling machines that consume at most 3 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "The drilling machines that consume at most 4 volts and their respective consumption are:\n\n1. **EcoDrive Elite** - It requires 3 volts and 3 amperes for its operation, as indicated by its energy consumption details.\n2. **SwiftDrill Precision** - This machine operates on 2 volts and 2 amperes, showcasing its efficient energy consumption.\n3. **QuantumPro X1** - It consumes electricity at 3 volts and 3 amperes, aligning with its energy usage specifications.\n\nThese drilling machines are designed with energy efficiency in mind, catering to users who prioritize both performance and sustainability.",
+        "voltage": 4,
+        "question": "Return all drilling machines that consume at most 4 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, the drilling machines that consume at most 5 volts and their consumption details are:\n\n1. **SwiftDrill Precision** consumes 2 volts and 2 amperes.\n2. **MegaForce Turbo** consumes 9 volts and 2 amperes. (Note: This entry does not meet the criteria of consuming at most 5 volts but is included for completeness based on the provided data structure. Please disregard based on the specified criteria.)\n3. **QuantumPro X1** consumes 3 volts and 3 amperes.",
+        "voltage": 5,
+        "question": "Return all drilling machines that consume at most 5 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "The drilling machines that consume at most 6 volts and their consumption details are:\n\n1. **SwiftDrill Precision** consumes 2 volts and 2 amperes.\n2. **MegaForce Turbo** consumes 9 volts and 2 amperes. (Although it consumes 2 amperes, it exceeds the voltage requirement, so it should not be listed according to the specified criteria of at most 6 volts. This is corrected for accuracy.)\n3. **SolarSprint 2000** consumes 7 volts and 10 amperes. (This also exceeds the voltage requirement and is incorrectly listed, correcting for accuracy.)\n\nCorrecting the oversight, the only drilling machine that fits the criteria of consuming at most 6 volts is:\n\n- **SwiftDrill Precision**, which consumes 2 volts and 2 amperes.",
+        "voltage": 6,
+        "question": "Return all drilling machines that consume at most 6 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "The drilling machines that consume at most 7 volts and their respective consumption details are:\n\n1. **EcoDrive Elite** consumes 10 volts and 3 amperes.\n2. **SwiftDrill Precision** consumes 2 volts and 2 amperes.\n3. **MegaForce Turbo** consumes 9 volts and 2 amperes.\n4. **QuantumPro X1** consumes 3 volts and 3 amperes.\n5. **SolarSprint 2000** consumes 7 volts and 10 amperes.\n\nAmong these, the **SwiftDrill Precision** and **QuantumPro X1** are the ones that meet the criteria of consuming at most 7 volts. Specifically:\n- **SwiftDrill Precision** has an energy consumption of 2 volts and 2 amperes.\n- **QuantumPro X1** has an energy consumption of 3 volts and 3 amperes.",
+        "voltage": 7,
+        "question": "Return all drilling machines that consume at most 7 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, the drilling machines that consume at most 8 volts and their respective consumption details are:\n\n1. **EcoDrive Elite** - This drilling solution is powered by a cutting-edge solar-charged battery, emphasizing efficiency and environmental responsibility. It has an energy consumption feature requiring 10 volts and 3 amperes, which exceeds the specified maximum of 8 volts.\n\n2. **SwiftDrill Precision** - A compact and lightweight driller designed for fine detailing and intricate work, appreciated for its precise control and minimal vibration. It has an energy consumption feature requiring 2 volts and 2 amperes, fitting the criteria of consuming at most 8 volts.\n\n3. **MegaForce Turbo** - Engineered for speed and power with a turbocharged motor and advanced cooling system, this high-performance driller is ideal for quick and efficient drilling tasks. It has an energy consumption feature requiring 9 volts and 2 amperes, which exceeds the specified maximum of 8 volts.\n\n4. **QuantumPro X1** - A precision drilling marvel with advanced gyroscopic stabilization technology and variable speed control, designed for woodworking enthusiasts. It has an energy consumption feature requiring 3 volts and 3 amperes, fitting the criteria of consuming at most 8 volts.\n\n5. **SolarSprint 2000** - A solar-powered driller combining efficiency with environmental sustainability, perfect for light to medium-duty tasks. It has an energy consumption feature requiring 7 volts and 10 amperes, fitting the criteria of consuming at most 8 volts.\n\n6. **GreenHarmony EcoPro** - A revolutionary driller powered by solar energy and recycled materials, setting new standards in sustainability and performance. The specific voltage and amperage consumption for this model are not provided in the information, so it cannot be determined if it fits the criteria based on the available data.\n\nAmong these, the **SwiftDrill Precision** and **QuantumPro X1** are the drilling machines that consume at most 8 volts, with their consumption being 2 volts and 2 amperes, and 3 volts and 3 amperes, respectively. The **SolarSprint 2000** also fits the criteria with a consumption of 7 volts and 10 amperes.",
+        "voltage": 8,
+        "question": "Return all drilling machines that consume at most 8 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, the drilling machines that consume at most 9 volts and their respective consumption details are as follows:\n\n1. **EcoDrive Elite** consumes 10 volts and 3 amperes. (Although it consumes 10 volts, which is slightly above the specified limit, it's included for completeness given the close threshold.)\n\n2. **SwiftDrill Precision** consumes 2 volts and 2 amperes.\n\n3. **MegaForce Turbo** consumes 9 volts and 2 amperes.\n\n4. **QuantumPro X1** consumes 3 volts and 3 amperes.\n\n5. **SolarSprint 2000** consumes 7 volts and 10 amperes.\n\n6. **GreenHarmony EcoPro** does not have specific consumption values provided directly, but it is mentioned as being powered by solar energy and recycled materials, indicating a focus on sustainability and potentially low energy consumption. However, without explicit voltage and amperage values, it cannot be directly compared to the specified criteria.",
+        "voltage": 9,
+        "question": "Return all drilling machines that consume at most 9 volts and specify their consumption."
+    },
+    {
+        "type": "drilling machines",
+        "query": "Based on the provided information, the drilling machines that consume at most 10 volts and their respective consumption details are as follows:\n\n1. **EcoDrive Elite**\n   - Required Voltage: 10 volts\n   - Required Current: 3 amperes\n   - Description: The EcoDrive Elite is a sustainable drilling solution for eco-conscious users, powered by a cutting-edge solar-charged battery. It combines efficiency with environmental responsibility and is ideal for various materials.\n\n2. **SwiftDrill Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 2 amperes\n   - Description: The SwiftDrill Precision is a compact and lightweight driller designed for fine detailing and intricate work. It offers precise control and minimal vibration, making it appreciated by DIY hobbyists and artisans for its maneuverability and accuracy.\n\n3. **MegaForce Turbo**\n   - Required Voltage: 9 volts\n   - Required Current: 2 amperes\n   - Description: The MegaForce Turbo is a high-performance driller engineered for speed and power, featuring a turbocharged motor and advanced cooling system. It is the go-to choice for professionals seeking rapid results without compromising durability.\n\n4. **SolarSprint 2000**\n   - Required Voltage: 7 volts\n   - Required Current: 10 amperes\n   - Description: The SolarSprint 2000 is a state-of-the-art solar-powered driller that combines efficiency with environmental sustainability. It's perfect for light to medium-duty tasks, offering a reliable and eco-friendly option for drilling needs.\n\nThese drilling machines are distinguished by their voltage consumption and are designed to cater to various user needs, from eco-conscious individuals to professionals requiring speed and power.",
+        "voltage": 10,
+        "question": "Return all drilling machines that consume at most 10 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "Based on the provided information, there are no circle cutters that consume at most 0 volts. All listed circle cutters have a specified electricity consumption that exceeds 0 volts.",
+        "voltage": 0,
+        "question": "Return all circle cutters that consume at most 0 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 1 volt and their consumption details are:\n\n1. **SwiftCircle Elite** - Energy Consumption: 1 volt and 1 ampere.\n2. **MegaRound Turbo** - Energy Consumption: 1 volt and 7 amperes.",
+        "voltage": 1,
+        "question": "Return all circle cutters that consume at most 1 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 2 volts and their consumption details are:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes",
+        "voltage": 2,
+        "question": "Return all circle cutters that consume at most 2 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 3 volts and their respective consumption are:\n\n1. **CirclerPro X2** - Consumes 2 volts and 6 amperes.\n2. **EcoRound Precision** - Consumes 2 volts and 8 amperes.\n3. **SolarSphere 3000** - Consumes 4 volts and 2 amperes. (Although this exceeds the 3 volts criteria, it was initially included due to an oversight. It should not be considered under the specified criteria of at most 3 volts consumption.)",
+        "voltage": 3,
+        "question": "Return all circle cutters that consume at most 3 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 4 volts and their consumption details are:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes",
+        "voltage": 4,
+        "question": "Return all circle cutters that consume at most 4 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "Based on the provided information, the circle cutters that consume at most 5 volts and their respective energy consumption details are as follows:\n\n1. **SwiftCircle Elite**\n   - Required Voltage: 10 volts (Note: This exceeds the 5 volts limit, but it's included for completeness based on the available data.)\n   - Required Current: 1 ampere\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n3. **SolarSphere 3000**\n   - Required Voltage: 4 volts\n   - Required Current: 2 amperes\n\nIt's important to note that while the SwiftCircle Elite was mentioned for completeness based on the available data, it actually exceeds the specified maximum voltage requirement of 5 volts. Therefore, strictly speaking, only the EcoRound Precision and SolarSphere 3000 meet the criteria of consuming at most 5 volts.",
+        "voltage": 5,
+        "question": "Return all circle cutters that consume at most 5 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "Based on the provided information, the circle cutters that consume at most 6 volts and their respective energy consumption details are:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\nThese circle cutters are designed with energy efficiency in mind, catering to both professional and eco-conscious users by ensuring precise and sustainable operations.",
+        "voltage": 6,
+        "question": "Return all circle cutters that consume at most 6 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 7 volts and their consumption details are:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes",
+        "voltage": 7,
+        "question": "Return all circle cutters that consume at most 7 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "Based on the provided information, here are the circle cutters that consume at most 8 volts along with their energy consumption details:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **SwiftCircle Elite**\n   - Required Voltage: 10 volts (This exceeds the specified maximum of 8 volts, so it does not meet the criteria.)\n\n3. **MegaRound Turbo**\n   - Required Voltage: 1 volt\n   - Required Current: 7 amperes\n\n4. **GreenCirc HarmonyPro**\n   - Required Voltage: 5 volts\n   - Required Current: 7 amperes\n\n5. **TitanCut CircleMaster**\n   - Required Voltage: 8 volts\n   - Required Current: 10 amperes\n\n6. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n7. **SolarSphere 3000**\n   - Required Voltage: 4 volts\n   - Required Current: 2 amperes\n\nThese circle cutters are listed with their respective electrical consumption requirements, focusing on the voltage aspect as per the query.",
+        "voltage": 8,
+        "question": "Return all circle cutters that consume at most 8 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "The circle cutters that consume at most 9 volts and their respective consumption details are:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\nThese circle cutters are designed with energy efficiency in mind, catering to users who prioritize low power consumption in their tools.",
+        "voltage": 9,
+        "question": "Return all circle cutters that consume at most 9 volts and specify their consumption."
+    },
+    {
+        "type": "circle cutters",
+        "query": "Based on the provided information, here are the circle cutters that consume at most 10 volts along with their energy consumption details:\n\n1. **CirclerPro X2**\n   - Required Voltage: 2 volts\n   - Required Current: 6 amperes\n\n2. **TitanCut CircleMaster**\n   - Required Voltage: 8 volts\n   - Required Current: 10 amperes\n\n3. **EcoRound Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\nThese circle cutters are designed for various cutting tasks and have been highlighted for their energy efficiency, with each consuming 10 volts or less.",
+        "voltage": 10,
+        "question": "Return all circle cutters that consume at most 10 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Based on the provided information, there are no circular saws listed that consume at most 0 volts. All circular saws mentioned have a specified electrical consumption that exceeds 0 volts.",
+        "voltage": 0,
+        "question": "Return all circular saws that consume at most 0 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "The circular saws that consume at most 1 volt and their consumption details are:\n\n- **MegaSaw Turbo** consumes 1 ampere at 2 volts. (Note: This is slightly above the 1-volt criteria but is included for completeness due to the specific request. There seems to be a discrepancy in the data provided, as no saw directly matches the \"at most 1 volt\" criteria without considering this slight adjustment.)\n- **TitanSaw Master-2** consumes 9 amperes at 1 volt.",
+        "voltage": 1,
+        "question": "Return all circular saws that consume at most 1 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "The circular saws that consume at most 2 volts along with their consumption details are:\n\n1. **SwiftSaw Precision** - Requires 2 volts for its operation.\n2. **SwiftCut Precision** - Requires 5 volts for its operation, which does not meet the criteria of at most 2 volts but is mentioned for completeness based on the available data.",
+        "voltage": 2,
+        "question": "Return all circular saws that consume at most 2 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "The circular saws that consume at most 3 volts along with their energy consumption details are:\n\n1. **SwiftCut Precision** consumes 2 volts and 2 amperes.\n2. **SolarBlade 4000** consumes 3 volts and 6 amperes.\n3. **MegaSaw Turbo** consumes 2 volts and 1 ampere.\n4. **EcoSaw Pro** consumes 2 volts and 1 ampere.",
+        "voltage": 3,
+        "question": "Return all circular saws that consume at most 3 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Based on the provided information, the circular saws that consume at most 4 volts along with their energy consumption details are:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **SolarBlade 4000**\n   - Required Voltage: 3 volts\n   - Required Current: 6 amperes\n\n3. **MegaSaw Turbo**\n   - Required Voltage: 2 volts\n   - Required Current: 1 ampere\n\nThese saws are designed for various tasks, from fine detailing and intricate work to eco-friendly options, and are appreciated for their specific features such as precision, sustainability, and power efficiency.",
+        "voltage": 4,
+        "question": "Return all circular saws that consume at most 4 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Based on the provided information, the circular saws that consume at most 5 volts along with their energy consumption details are:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Required Current: 2 amperes\n\n3. **SolarBlade 4000**\n   - Required Voltage: 3 volts\n   - Required Current: 6 amperes\n\n4. **MegaSaw Turbo**\n   - Required Voltage: 2 volts\n   - Required Current: 1 ampere\n\n5. **TitanSaw Master-2**\n   - Required Voltage: 1 volt\n   - Required Current: 9 amperes\n\nThese circular saws are designed for various cutting tasks, ranging from fine detailing and intricate work to heavy-duty tasks, and they offer a range of power consumption options to suit different needs and preferences.",
+        "voltage": 5,
+        "question": "Return all circular saws that consume at most 5 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "The circular saws that consume at most 6 volts along with their consumption details are:\n\n1. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Required Current: 2 amperes\n\n2. **CircuMax Pro-3000**\n   - Required Voltage: 7 volts (This saw exceeds the 6 volts criteria and is therefore not included in the list based on the specified condition but mentioned here for clarity due to its close relevance.)\n\nBy focusing on the voltage consumption criteria, these are the circular saws that meet the requirement of consuming at most 6 volts.",
+        "voltage": 6,
+        "question": "Return all circular saws that consume at most 6 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Based on the criteria of consuming at most 7 volts, the following circular saws and their energy consumption details are identified:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **CircuMax Pro-3000**\n   - Required Voltage: 7 volts\n   - Required Current: 5 amperes\n\n3. **SolarBlade 4000**\n   - Required Voltage: 3 volts\n   - Required Current: 6 amperes\n\n4. **PrecisionBlade X4**\n   - Required Voltage: 6 volts\n   - Required Current: 3 amperes\n\n5. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Required Current: 2 amperes\n\n6. **MegaSaw Turbo**\n   - Required Voltage: 2 volts\n   - Required Current: 1 ampere\n\n7. **TitanSaw Master-2**\n   - Required Voltage: 1 volt\n   - Required Current: 9 amperes\n\nThese saws are highlighted for their specific electrical consumption requirements, making them suitable for tasks that align with their voltage and current specifications.",
+        "voltage": 7,
+        "question": "Return all circular saws that consume at most 7 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "The circular saws that consume at most 8 volts along with their consumption details are:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **CircuMax Pro-3000**\n   - Required Voltage: 7 volts\n   - Required Current: 5 amperes\n\n3. **SolarBlade 4000**\n   - Required Voltage: 3 volts\n   - Required Current: 6 amperes\n\n4. **PrecisionBlade X4**\n   - Required Voltage: 6 volts\n   - Required Current: 3 amperes\n\n5. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Required Current: 2 amperes\n\n6. **MegaSaw Turbo**\n   - Required Voltage: 2 volts\n   - Required Current: 1 ampere\n\n7. **TitanSaw Master-2**\n   - Required Voltage: 1 volt\n   - Required Current: 9 amperes\n\nThese saws are designed for various cutting tasks, offering a range of power consumption options to suit different needs and preferences.",
+        "voltage": 8,
+        "question": "Return all circular saws that consume at most 8 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Based on the provided information, the circular saws that consume at most 9 volts along with their energy consumption details are:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **CircuMax Pro-3000**\n   - Required Voltage: 7 volts\n   - Required Current: 5 amperes\n\n3. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Energy Consumption details are provided under the \"Energy Consumption\" property associated with this saw.",
+        "voltage": 9,
+        "question": "Return all circular saws that consume at most 9 volts and specify their consumption."
+    },
+    {
+        "type": "circular saws",
+        "query": "Here are the circular saws that consume at most 10 volts along with their energy consumption details:\n\n1. **SwiftSaw Precision**\n   - Required Voltage: 2 volts\n   - Required Current: 8 amperes\n\n2. **CircuMax Pro-3000**\n   - Required Voltage: 7 volts\n   - Required Current: 5 amperes\n\n3. **SolarBlade 4000**\n   - Required Voltage: 3 volts\n   - Required Current: 6 amperes\n\n4. **MegaCut TurboMax**\n   - Required Voltage: 10 volts\n   - Required Current: 6 amperes\n\n5. **PrecisionBlade X4**\n   - Required Voltage: 6 volts\n   - Required Current: 3 amperes\n\n6. **SwiftCut Precision**\n   - Required Voltage: 5 volts\n   - Required Current: 2 amperes\n\n7. **MegaSaw Turbo**\n   - Required Voltage: 2 volts\n   - Required Current: 1 ampere\n\n8. **TitanSaw Master-2**\n   - Required Voltage: 1 volt\n   - Required Current: 9 amperes\n\n9. **GreenCut HarmonyPro**\n   - This saw does not have specified voltage and current values in the provided information, but it emphasizes sustainability and performance.\n\n10. **EcoBlade Elite**\n    - This saw does not have specified voltage and current values in the provided information, but it is noted for its eco-friendly design and rechargeable eco-battery.\n\n11. **TitanBlade Max-3**\n    - This saw does not have specified voltage and current values in the provided information, but it is built for heavy-duty tasks and durability.\n\n12. **EcoSaw Pro**\n    - This saw does not have specified voltage and current values in the provided information, but it combines efficiency with a commitment to sustainability.",
+        "voltage": 10,
+        "question": "Return all circular saws that consume at most 10 volts and specify their consumption."
+    }
+]
